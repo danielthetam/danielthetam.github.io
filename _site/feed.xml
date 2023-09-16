@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>danielthetam.github.io</title>
   <subtitle>This blog acts as a host for any documentation for my projects, however, if you are interested, my personal blog  can be found at danieltam.com</subtitle>
-  <updated>2023-09-16T12:52:41+08:00</updated>
+  <updated>2023-09-16T14:41:31+08:00</updated>
   <author>
     <name>danielthetam</name>
     <uri>http://localhost:4000/</uri>
@@ -20,19 +20,23 @@
 
   
   <entry>
-    <title>First Post</title>
-    <link href="http://localhost:4000/posts/first-post/" rel="alternate" type="text/html" title="First Post" />
+    <title>Second Post</title>
+    <link href="http://localhost:4000/posts/second-post/" rel="alternate" type="text/html" title="Second Post" />
     <published>2023-09-16T00:00:00+08:00</published>
   
     <updated>2023-09-16T00:00:00+08:00</updated>
   
-    <id>http://localhost:4000/posts/first-post/</id>
-    <content src="http://localhost:4000/posts/first-post/" />
+    <id>http://localhost:4000/posts/second-post/</id>
+    <content src="http://localhost:4000/posts/second-post/" />
     <author>
       <name>danielthetam</name>
     </author>
 
   
+    
+    <category term="Projects" />
+    
+    <category term="jBPM-qBPM" />
     
   
 
@@ -44,10 +48,48 @@
 
 
 
-      Hello World
+      It’s Our Second Post!
 
-I hate u
+    </summary>
+  
 
+  </entry>
+
+  
+  <entry>
+    <title>Introduction</title>
+    <link href="http://localhost:4000/posts/introduction/" rel="alternate" type="text/html" title="Introduction" />
+    <published>2023-09-16T00:00:00+08:00</published>
+  
+    <updated>2023-09-16T00:00:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/introduction/</id>
+    <content src="http://localhost:4000/posts/introduction/" />
+    <author>
+      <name>danielthetam</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+    <category term="jBPM-qBPM" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      What is qBPM
+qBPM is a tool for demonstrating how jBPM can be used to create powerful tools through smooth integrations with various open source technologies.
+
+Purpose of this Documentation
+This documentation will be dedicated to walking you through how you can set up a jBPM server, customise it to fit our needs, utilise jBPM to create automated processes, and integrate them with qBPM, as well ...
     </summary>
   
 
