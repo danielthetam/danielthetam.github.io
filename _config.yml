@@ -23,8 +23,8 @@ title: danielthetam.github.io # the main title
 tagline: A host for my documentation # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  This blog acts as a host for any documentation for my projects, however, if you are interested, my personal blog
-can be found at https://danieltam.com/
+  This blog acts as a host for any documentation for my projects, however, if you are interested, my personal blog 
+  can be found at danieltam.com
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: ""
