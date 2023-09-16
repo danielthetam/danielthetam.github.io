@@ -20,7 +20,7 @@ Now, we navigate to the Design tab and click on Projects. Next, add a new space 
 ### Creating Data Objects
 Now, we will begin adding our assets. First, let's clarify what objects we'd need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it. 
 
-In our portal, we'll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the reqest made by the first actor.
+In our portal, we'll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the request made by the first actor.
 
 #### Employee Data Object
 Now, let's add a Data Object(which are underlyingly Java object classes with fields you can define) named Employee and package it under "com.myspace.wfhrequest_portal". Let's add some fields which define the attributes of each employee.
@@ -52,5 +52,7 @@ We'll add another Data Object named Request, and package it under "com.myspace.w
     * Label: `Rq Dt`
     * Type: `Integer`
 
-Number of days represents the number of days the employee will be working from home, starting on reqDt(the requested date). Reason represents the reason for the request. Once again we save the object.
+`numOfDays` represents the number of days the employee will be working from home, starting on reqDt(the requested date). `reason` represents the reason for the request. Once again we save the object.
 
+### Defining our business process
+Now, we design the business process and define its flow. 
