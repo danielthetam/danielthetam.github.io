@@ -17,15 +17,15 @@ Now, we navigate to the Design tab and click on Projects. Next, add a new space 
 > #### Note: Follow the specified names
 > Please follow the specified names because the application that we will be deploying later does in fact use these names. So make sure each name matches perfectly. 
 
-### Creating Data Objects
+## Creating Data Objects
 Now, we will begin adding our assets. First, let's clarify what objects we'd need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it. 
 
 In our portal, we'll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the request made by the first actor.
 
-#### Employee Data Object
+### Employee Data Object
 Now, let's add a Data Object(which are underlyingly Java object classes with fields you can define) named Employee and package it under "com.myspace.wfhrequest_portal". Let's add some fields which define the attributes of each employee.
 
-##### Add the fields:
+#### Add the fields:
 * Identifier: `eid`
     * Label: `Employee ID`
     * Type: `Long`
@@ -38,10 +38,10 @@ Now, let's add a Data Object(which are underlyingly Java object classes with fie
 
 We then save the object by clicking on "Save".
 
-#### Request Data Object
+### Request Data Object
 We'll add another Data Object named Request, and package it under "com.myspace.wfhrequest_portal". Now, we'll define the attributes for our Request object.
 
-##### Add the fields:
+#### Add the fields:
 * Identifier: `numOfDays`
     * Label: `Number of Days`
     * Type: `Integer`
@@ -54,5 +54,33 @@ We'll add another Data Object named Request, and package it under "com.myspace.w
 
 `numOfDays` represents the number of days the employee will be working from home, starting on reqDt(the requested date). `reason` represents the reason for the request. Once again we save the object.
 
-### Defining our business process
-Now, we design the business process and define its flow. 
+## Defining our business process
+Now, we shall design the business process and define its flow. Because this is a demo application, we'll keep things simple instead of creating overwhelmingly complex processes. 
+
+> ### *Scenario Reference*
+> In our portal, we'll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the request made by the first actor.
+
+Our goal now is to turn the above thoughts into action. Let's start off by adding a new business process asset into the project and naming it 'request-portal'. Below is a reference image and a spoiler for what our business process will look like at the end of the day.
+
+ADD REFERENCE IMAGE
+
+### Submission Stage
+From the above, we know that our process involves these three stages: submission, processing and a final approval. To represent submission(i.e the start of the process), we will drag a start node(the plain green circle) into our editor space.
+
+### Processing Stages
+Now, in the processing stage, we can break it down into two sub-stages: manual filtering by Processing Officers, and the assignment of the appropriate department manager by a Human Resources team. 
+
+Since these are tasks assigned to humans, let's click on the Activities button(can be identified by a plain rounded rectangle on the menu of nodes on the left) and drag in a User node. Then we connect the start node to it. Nodes can be connected together by clicking on the preceding node, selecting the solid arrow icon and dragging it towards the following node. Click on the User node and edit its name to "Manual Filtering" in the Properties window on the right. 
+
+If there doesn't appear to be any window, click on the pencil-paper icon on the upper right corner to expand it. 
+
+Then, we drag in another User node, and we then name it "Department Manager Assignment". 
+
+Before connecting the two, we need a BPMN(Business Process Model and Notation) gateway, which can be thought of as a logic gate which helps us implement conditional statements in our process. This gateway is needed to split our results into two cases based on the input of Process Officers. One being an approval from Process Officers where it will lead to the Department Manager Assignment task, and another where it is rejected, and leads to an early-ending and a notice email of rejection to the employee. A list of gateways and what they generally perform can be found [here](https://www.lucidchart.com/pages/bpmn-symbols-explained#section_4).
+
+Let's click on the Gateways button and drag an "Exclusive" gateway in between our two task nodes. CONTINUE FROM HERE
+
+Now, click on the upper right pencil-paper icon to edit the properties of our process. Then, click on Process Data to expand the list, and there we can edit our process variables. These are variables that we need to keep track of globally throughout the execution of the process. Based on the scenario reference, we know that we'll need a variable named `employee` of data type `Employee` which represents the employee who submitted the request. Besides that, we'll need another variable named `request` of data type `Request`, which represents the request the employee has submitted. At the end of the day, these two variables will be filled up by the employee looking to submit a request to work from home.
+
+> #### *Note*
+> There are two terms we need to familiarise ourselves with here. One being Process Definition, and the other Process Instance. Currently, we are creating a process definition, which can be thought of as a base blueprint for a Process Instance. There can be multiple Process Instances, which are created(or 'instantiated' when going for proper terms) when the employee wants to submit a request. Each instance is different from each other, primarily based on differences in process variables that are defined by user input(like our `employee` and `request` variable that needs to be filled up by the requester), but they all follow the same underlying logic and flow according to our Process Definition. 

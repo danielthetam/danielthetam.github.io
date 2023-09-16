@@ -41,8 +41,8 @@
 <meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:title" content="Getting Started" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Starting the jBPM Server Once we have installed jBPM and unzipped its contents, we can begin by navigating to the ‘bin’ folder and running ‘standalone.bat’. This will get the jBPM server up and running. Once the server is up, navigate to Business Central(“https://localhost:8080/business-central/”) where we’ll be met by the Business Central login page. Getting started with Business Central jBPM comes with a few default accounts for us to access, one of which includes our primary user, wbadmin, which we will use to log in to Business Central with the password, “wbadmin”. By default, account passwords are the same as their usernames, except for kie-server, which uses the password “kieserver1!”. To access the list of accounts available to us, click on the cog icon on the top right of the screen and click on users. In short, Business Central is a web-based application for users to implement, execute and monitor business processes. Creating our Project Now, we navigate to the Design tab and click on Projects. Next, add a new space named “MySpace”, enter your new space, add a new project and name it “WFHRequest-Portal”. Note: Follow the specified names Please follow the specified names because the application that we will be deploying later does in fact use these names. So make sure each name matches perfectly. Creating Data Objects Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it. In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the reqest made by the first actor. Employee Data Object Now, let’s add a Data Object(which are underlyingly Java object classes with fields you can define) named Employee and package it under “com.myspace.wfhrequest_portal”. Let’s add some fields which define the attributes of each employee. Add the fields: Identifier: eid Label: Employee ID Type: Long Identifier: email Label: Email Type: String Identifier: name Label: Name Type: String We then save the object by clicking on “Save”. Request Data Object We’ll add another Data Object named Request, and package it under “com.myspace.wfhrequest_portal”. Now, we’ll define the attributes for our Request object. Add the fields: Identifier: numOfDays Label: Number of Days Type: Integer Identifier: reason Label: Reason Type: String Identifier: reqDt Label: Rq Dt Type: Integer Number of days represents the number of days the employee will be working from home, starting on reqDt(the requested date). Reason represents the reason for the request. Once again we save the object." />
-<meta property="og:description" content="Starting the jBPM Server Once we have installed jBPM and unzipped its contents, we can begin by navigating to the ‘bin’ folder and running ‘standalone.bat’. This will get the jBPM server up and running. Once the server is up, navigate to Business Central(“https://localhost:8080/business-central/”) where we’ll be met by the Business Central login page. Getting started with Business Central jBPM comes with a few default accounts for us to access, one of which includes our primary user, wbadmin, which we will use to log in to Business Central with the password, “wbadmin”. By default, account passwords are the same as their usernames, except for kie-server, which uses the password “kieserver1!”. To access the list of accounts available to us, click on the cog icon on the top right of the screen and click on users. In short, Business Central is a web-based application for users to implement, execute and monitor business processes. Creating our Project Now, we navigate to the Design tab and click on Projects. Next, add a new space named “MySpace”, enter your new space, add a new project and name it “WFHRequest-Portal”. Note: Follow the specified names Please follow the specified names because the application that we will be deploying later does in fact use these names. So make sure each name matches perfectly. Creating Data Objects Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it. In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the reqest made by the first actor. Employee Data Object Now, let’s add a Data Object(which are underlyingly Java object classes with fields you can define) named Employee and package it under “com.myspace.wfhrequest_portal”. Let’s add some fields which define the attributes of each employee. Add the fields: Identifier: eid Label: Employee ID Type: Long Identifier: email Label: Email Type: String Identifier: name Label: Name Type: String We then save the object by clicking on “Save”. Request Data Object We’ll add another Data Object named Request, and package it under “com.myspace.wfhrequest_portal”. Now, we’ll define the attributes for our Request object. Add the fields: Identifier: numOfDays Label: Number of Days Type: Integer Identifier: reason Label: Reason Type: String Identifier: reqDt Label: Rq Dt Type: Integer Number of days represents the number of days the employee will be working from home, starting on reqDt(the requested date). Reason represents the reason for the request. Once again we save the object." />
+<meta name="description" content="Starting the jBPM Server Once we have installed jBPM and unzipped its contents, we can begin by navigating to the ‘bin’ folder and running ‘standalone.bat’. This will get the jBPM server up and running. Once the server is up, navigate to Business Central(“https://localhost:8080/business-central/”) where we’ll be met by the Business Central login page. Getting started with Business Central jBPM comes with a few default accounts for us to access, one of which includes our primary user, wbadmin, which we will use to log in to Business Central with the password, “wbadmin”. By default, account passwords are the same as their usernames, except for kie-server, which uses the password “kieserver1!”. To access the list of accounts available to us, click on the cog icon on the top right of the screen and click on users. In short, Business Central is a web-based application for users to implement, execute and monitor business processes. Creating our Project Now, we navigate to the Design tab and click on Projects. Next, add a new space named “MySpace”, enter your new space, add a new project and name it “WFHRequest-Portal”. Note: Follow the specified names Please follow the specified names because the application that we will be deploying later does in fact use these names. So make sure each name matches perfectly. Creating Data Objects Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it. In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the request made by the first actor. Employee Data Object Now, let’s add a Data Object(which are underlyingly Java object classes with fields you can define) named Employee and package it under “com.myspace.wfhrequest_portal”. Let’s add some fields which define the attributes of each employee. Add the fields: Identifier: eid Label: Employee ID Type: Long Identifier: email Label: Email Type: String Identifier: name Label: Name Type: String We then save the object by clicking on “Save”. Request Data Object We’ll add another Data Object named Request, and package it under “com.myspace.wfhrequest_portal”. Now, we’ll define the attributes for our Request object. Add the fields: Identifier: numOfDays Label: Number of Days Type: Integer Identifier: reason Label: Reason Type: String Identifier: reqDt Label: Rq Dt Type: Integer numOfDays represents the number of days the employee will be working from home, starting on reqDt(the requested date). reason represents the reason for the request. Once again we save the object. Defining our business process Now, we shall design the business process and define its flow. Because this is a demo application, we’ll keep things simple instead of creating overwhelmingly complex processes. Scenario Reference In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the request made by the first actor. Our goal now is to turn the above thoughts into action. Let’s start off by adding a new business process asset into the project and naming it ‘request-portal’. Below is a reference image and a spoiler for what our business process will look like at the end of the day. ADD REFERENCE IMAGE Submission Stage From the above, we know that our process involves these three stages: submission, processing and a final approval. To represent submission(i.e the start of the process), we will drag a start node(the plain green circle) into our editor space. Processing Stages Now, in the processing stage, we can break it down into two sub-stages: manual filtering by Processing Officers, and the assignment of the appropriate department manager by a Human Resources team. Since these are tasks assigned to humans, let’s click on the Activities button(can be identified by a plain rounded rectangle on the menu of nodes on the left) and drag in a User node. Then we connect the start node to it. Nodes can be connected together by clicking on the preceding node, selecting the solid arrow icon and dragging it towards the following node. Click on the User node and edit its name to “Manual Filtering” in the Properties window on the right. If there doesn’t appear to be any window, click on the pencil-paper icon on the upper right corner to expand it. Then, we drag in another User node, and we then name it “Department Manager Assignment”. Before connecting the two, we need a BPMN(Business Process Model and Notation) gateway, which can be thought of as a logic gate which helps us implement conditional statements in our process. This gateway is needed to split our results into two cases based on the input of Process Officers. One being an approval from Process Officers where it will lead to the Department Manager Assignment task, and another where it is rejected, and leads to an early-ending and a notice email of rejection to the employee. A list of gateways and what they generally perform can be found here. Let’s click on the Gateways button and drag an “Exclusive” gateway in between our two task nodes. CONTINUE FROM HERE Now, click on the upper right pencil-paper icon to edit the properties of our process. Then, click on Process Data to expand the list, and there we can edit our process variables. These are variables that we need to keep track of globally throughout the execution of the process. Based on the scenario reference, we know that we’ll need a variable named employee of data type Employee which represents the employee who submitted the request. Besides that, we’ll need another variable named request of data type Request, which represents the request the employee has submitted. At the end of the day, these two variables will be filled up by the employee looking to submit a request to work from home. Note There are two terms we need to familiarise ourselves with here. One being Process Definition, and the other Process Instance. Currently, we are creating a process definition, which can be thought of as a base blueprint for a Process Instance. There can be multiple Process Instances, which are created(or ‘instantiated’ when going for proper terms) when the employee wants to submit a request. Each instance is different from each other, primarily based on differences in process variables that are defined by user input(like our employee and request variable that needs to be filled up by the requester), but they all follow the same underlying logic and flow according to our Process Definition." />
+<meta property="og:description" content="Starting the jBPM Server Once we have installed jBPM and unzipped its contents, we can begin by navigating to the ‘bin’ folder and running ‘standalone.bat’. This will get the jBPM server up and running. Once the server is up, navigate to Business Central(“https://localhost:8080/business-central/”) where we’ll be met by the Business Central login page. Getting started with Business Central jBPM comes with a few default accounts for us to access, one of which includes our primary user, wbadmin, which we will use to log in to Business Central with the password, “wbadmin”. By default, account passwords are the same as their usernames, except for kie-server, which uses the password “kieserver1!”. To access the list of accounts available to us, click on the cog icon on the top right of the screen and click on users. In short, Business Central is a web-based application for users to implement, execute and monitor business processes. Creating our Project Now, we navigate to the Design tab and click on Projects. Next, add a new space named “MySpace”, enter your new space, add a new project and name it “WFHRequest-Portal”. Note: Follow the specified names Please follow the specified names because the application that we will be deploying later does in fact use these names. So make sure each name matches perfectly. Creating Data Objects Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it. In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the request made by the first actor. Employee Data Object Now, let’s add a Data Object(which are underlyingly Java object classes with fields you can define) named Employee and package it under “com.myspace.wfhrequest_portal”. Let’s add some fields which define the attributes of each employee. Add the fields: Identifier: eid Label: Employee ID Type: Long Identifier: email Label: Email Type: String Identifier: name Label: Name Type: String We then save the object by clicking on “Save”. Request Data Object We’ll add another Data Object named Request, and package it under “com.myspace.wfhrequest_portal”. Now, we’ll define the attributes for our Request object. Add the fields: Identifier: numOfDays Label: Number of Days Type: Integer Identifier: reason Label: Reason Type: String Identifier: reqDt Label: Rq Dt Type: Integer numOfDays represents the number of days the employee will be working from home, starting on reqDt(the requested date). reason represents the reason for the request. Once again we save the object. Defining our business process Now, we shall design the business process and define its flow. Because this is a demo application, we’ll keep things simple instead of creating overwhelmingly complex processes. Scenario Reference In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the request made by the first actor. Our goal now is to turn the above thoughts into action. Let’s start off by adding a new business process asset into the project and naming it ‘request-portal’. Below is a reference image and a spoiler for what our business process will look like at the end of the day. ADD REFERENCE IMAGE Submission Stage From the above, we know that our process involves these three stages: submission, processing and a final approval. To represent submission(i.e the start of the process), we will drag a start node(the plain green circle) into our editor space. Processing Stages Now, in the processing stage, we can break it down into two sub-stages: manual filtering by Processing Officers, and the assignment of the appropriate department manager by a Human Resources team. Since these are tasks assigned to humans, let’s click on the Activities button(can be identified by a plain rounded rectangle on the menu of nodes on the left) and drag in a User node. Then we connect the start node to it. Nodes can be connected together by clicking on the preceding node, selecting the solid arrow icon and dragging it towards the following node. Click on the User node and edit its name to “Manual Filtering” in the Properties window on the right. If there doesn’t appear to be any window, click on the pencil-paper icon on the upper right corner to expand it. Then, we drag in another User node, and we then name it “Department Manager Assignment”. Before connecting the two, we need a BPMN(Business Process Model and Notation) gateway, which can be thought of as a logic gate which helps us implement conditional statements in our process. This gateway is needed to split our results into two cases based on the input of Process Officers. One being an approval from Process Officers where it will lead to the Department Manager Assignment task, and another where it is rejected, and leads to an early-ending and a notice email of rejection to the employee. A list of gateways and what they generally perform can be found here. Let’s click on the Gateways button and drag an “Exclusive” gateway in between our two task nodes. CONTINUE FROM HERE Now, click on the upper right pencil-paper icon to edit the properties of our process. Then, click on Process Data to expand the list, and there we can edit our process variables. These are variables that we need to keep track of globally throughout the execution of the process. Based on the scenario reference, we know that we’ll need a variable named employee of data type Employee which represents the employee who submitted the request. Besides that, we’ll need another variable named request of data type Request, which represents the request the employee has submitted. At the end of the day, these two variables will be filled up by the employee looking to submit a request to work from home. Note There are two terms we need to familiarise ourselves with here. One being Process Definition, and the other Process Instance. Currently, we are creating a process definition, which can be thought of as a base blueprint for a Process Instance. There can be multiple Process Instances, which are created(or ‘instantiated’ when going for proper terms) when the employee wants to submit a request. Each instance is different from each other, primarily based on differences in process variables that are defined by user input(like our employee and request variable that needs to be filled up by the requester), but they all follow the same underlying logic and flow according to our Process Definition." />
 <link rel="canonical" href="http://localhost:4000/posts/getting-started/" />
 <meta property="og:url" content="http://localhost:4000/posts/getting-started/" />
 <meta property="og:site_name" content="danielthetam.github.io" />
@@ -51,7 +51,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Getting Started" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-16T15:30:00+08:00","datePublished":"2023-09-16T15:30:00+08:00","description":"Starting the jBPM Server Once we have installed jBPM and unzipped its contents, we can begin by navigating to the ‘bin’ folder and running ‘standalone.bat’. This will get the jBPM server up and running. Once the server is up, navigate to Business Central(“https://localhost:8080/business-central/”) where we’ll be met by the Business Central login page. Getting started with Business Central jBPM comes with a few default accounts for us to access, one of which includes our primary user, wbadmin, which we will use to log in to Business Central with the password, “wbadmin”. By default, account passwords are the same as their usernames, except for kie-server, which uses the password “kieserver1!”. To access the list of accounts available to us, click on the cog icon on the top right of the screen and click on users. In short, Business Central is a web-based application for users to implement, execute and monitor business processes. Creating our Project Now, we navigate to the Design tab and click on Projects. Next, add a new space named “MySpace”, enter your new space, add a new project and name it “WFHRequest-Portal”. Note: Follow the specified names Please follow the specified names because the application that we will be deploying later does in fact use these names. So make sure each name matches perfectly. Creating Data Objects Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it. In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the reqest made by the first actor. Employee Data Object Now, let’s add a Data Object(which are underlyingly Java object classes with fields you can define) named Employee and package it under “com.myspace.wfhrequest_portal”. Let’s add some fields which define the attributes of each employee. Add the fields: Identifier: eid Label: Employee ID Type: Long Identifier: email Label: Email Type: String Identifier: name Label: Name Type: String We then save the object by clicking on “Save”. Request Data Object We’ll add another Data Object named Request, and package it under “com.myspace.wfhrequest_portal”. Now, we’ll define the attributes for our Request object. Add the fields: Identifier: numOfDays Label: Number of Days Type: Integer Identifier: reason Label: Reason Type: String Identifier: reqDt Label: Rq Dt Type: Integer Number of days represents the number of days the employee will be working from home, starting on reqDt(the requested date). Reason represents the reason for the request. Once again we save the object.","headline":"Getting Started","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/getting-started/"},"url":"http://localhost:4000/posts/getting-started/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-16T17:28:04+08:00","datePublished":"2023-09-16T15:30:00+08:00","description":"Starting the jBPM Server Once we have installed jBPM and unzipped its contents, we can begin by navigating to the ‘bin’ folder and running ‘standalone.bat’. This will get the jBPM server up and running. Once the server is up, navigate to Business Central(“https://localhost:8080/business-central/”) where we’ll be met by the Business Central login page. Getting started with Business Central jBPM comes with a few default accounts for us to access, one of which includes our primary user, wbadmin, which we will use to log in to Business Central with the password, “wbadmin”. By default, account passwords are the same as their usernames, except for kie-server, which uses the password “kieserver1!”. To access the list of accounts available to us, click on the cog icon on the top right of the screen and click on users. In short, Business Central is a web-based application for users to implement, execute and monitor business processes. Creating our Project Now, we navigate to the Design tab and click on Projects. Next, add a new space named “MySpace”, enter your new space, add a new project and name it “WFHRequest-Portal”. Note: Follow the specified names Please follow the specified names because the application that we will be deploying later does in fact use these names. So make sure each name matches perfectly. Creating Data Objects Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it. In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the request made by the first actor. Employee Data Object Now, let’s add a Data Object(which are underlyingly Java object classes with fields you can define) named Employee and package it under “com.myspace.wfhrequest_portal”. Let’s add some fields which define the attributes of each employee. Add the fields: Identifier: eid Label: Employee ID Type: Long Identifier: email Label: Email Type: String Identifier: name Label: Name Type: String We then save the object by clicking on “Save”. Request Data Object We’ll add another Data Object named Request, and package it under “com.myspace.wfhrequest_portal”. Now, we’ll define the attributes for our Request object. Add the fields: Identifier: numOfDays Label: Number of Days Type: Integer Identifier: reason Label: Reason Type: String Identifier: reqDt Label: Rq Dt Type: Integer numOfDays represents the number of days the employee will be working from home, starting on reqDt(the requested date). reason represents the reason for the request. Once again we save the object. Defining our business process Now, we shall design the business process and define its flow. Because this is a demo application, we’ll keep things simple instead of creating overwhelmingly complex processes. Scenario Reference In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the request made by the first actor. Our goal now is to turn the above thoughts into action. Let’s start off by adding a new business process asset into the project and naming it ‘request-portal’. Below is a reference image and a spoiler for what our business process will look like at the end of the day. ADD REFERENCE IMAGE Submission Stage From the above, we know that our process involves these three stages: submission, processing and a final approval. To represent submission(i.e the start of the process), we will drag a start node(the plain green circle) into our editor space. Processing Stages Now, in the processing stage, we can break it down into two sub-stages: manual filtering by Processing Officers, and the assignment of the appropriate department manager by a Human Resources team. Since these are tasks assigned to humans, let’s click on the Activities button(can be identified by a plain rounded rectangle on the menu of nodes on the left) and drag in a User node. Then we connect the start node to it. Nodes can be connected together by clicking on the preceding node, selecting the solid arrow icon and dragging it towards the following node. Click on the User node and edit its name to “Manual Filtering” in the Properties window on the right. If there doesn’t appear to be any window, click on the pencil-paper icon on the upper right corner to expand it. Then, we drag in another User node, and we then name it “Department Manager Assignment”. Before connecting the two, we need a BPMN(Business Process Model and Notation) gateway, which can be thought of as a logic gate which helps us implement conditional statements in our process. This gateway is needed to split our results into two cases based on the input of Process Officers. One being an approval from Process Officers where it will lead to the Department Manager Assignment task, and another where it is rejected, and leads to an early-ending and a notice email of rejection to the employee. A list of gateways and what they generally perform can be found here. Let’s click on the Gateways button and drag an “Exclusive” gateway in between our two task nodes. CONTINUE FROM HERE Now, click on the upper right pencil-paper icon to edit the properties of our process. Then, click on Process Data to expand the list, and there we can edit our process variables. These are variables that we need to keep track of globally throughout the execution of the process. Based on the scenario reference, we know that we’ll need a variable named employee of data type Employee which represents the employee who submitted the request. Besides that, we’ll need another variable named request of data type Request, which represents the request the employee has submitted. At the end of the day, these two variables will be filled up by the employee looking to submit a request to work from home. Note There are two terms we need to familiarise ourselves with here. One being Process Definition, and the other Process Instance. Currently, we are creating a process definition, which can be thought of as a base blueprint for a Process Instance. There can be multiple Process Instances, which are created(or ‘instantiated’ when going for proper terms) when the employee wants to submit a request. Each instance is different from each other, primarily based on differences in process variables that are defined by user input(like our employee and request variable that needs to be filled up by the requester), but they all follow the same underlying logic and flow according to our Process Definition.","headline":"Getting Started","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/getting-started/"},"url":"http://localhost:4000/posts/getting-started/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -587,22 +587,6 @@
       
 
     
-
-    
-
-  
-
-  
-  
-
-  
-    
-    
-
-    
-      
-        
-        
       
 
       
@@ -679,6 +663,42 @@
       
 
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
 
     
 
@@ -719,8 +739,37 @@
       
 
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
 
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
+
+  
+
+  
+  
 
   
 
@@ -762,6 +811,29 @@
 
     <!-- lastmod date -->
     
+      <span>
+        Updated
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1694856484"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Sep 16, 2023
+</time>
+
+      </span>
+    
 
     
 
@@ -800,9 +872,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="471 words"
+  title="1168 words"
 >
-  <em>2 min</em> read</span>
+  <em>6 min</em> read</span>
 
     </div>
     <!-- .d-flex -->
@@ -828,15 +900,15 @@
   <p>Please follow the specified names because the application that we will be deploying later does in fact use these names. So make sure each name matches perfectly.</p>
 </blockquote>
 
-<h3 id="creating-data-objects"><span class="me-2">Creating Data Objects</span><a href="#creating-data-objects" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<h2 id="creating-data-objects"><span class="me-2">Creating Data Objects</span><a href="#creating-data-objects" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it.</p>
 
-<p>In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the reqest made by the first actor.</p>
+<p>In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the request made by the first actor.</p>
 
-<h4 id="employee-data-object"><span class="me-2">Employee Data Object</span><a href="#employee-data-object" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<h3 id="employee-data-object"><span class="me-2">Employee Data Object</span><a href="#employee-data-object" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 <p>Now, let’s add a Data Object(which are underlyingly Java object classes with fields you can define) named Employee and package it under “com.myspace.wfhrequest_portal”. Let’s add some fields which define the attributes of each employee.</p>
 
-<h5 id="add-the-fields"><span class="me-2">Add the fields:</span><a href="#add-the-fields" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<h4 id="add-the-fields"><span class="me-2">Add the fields:</span><a href="#add-the-fields" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 <ul>
   <li>Identifier: <code class="language-plaintext highlighter-rouge">eid</code>
     <ul>
@@ -860,10 +932,10 @@
 
 <p>We then save the object by clicking on “Save”.</p>
 
-<h4 id="request-data-object"><span class="me-2">Request Data Object</span><a href="#request-data-object" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<h3 id="request-data-object"><span class="me-2">Request Data Object</span><a href="#request-data-object" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 <p>We’ll add another Data Object named Request, and package it under “com.myspace.wfhrequest_portal”. Now, we’ll define the attributes for our Request object.</p>
 
-<h5 id="add-the-fields-1"><span class="me-2">Add the fields:</span><a href="#add-the-fields-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<h4 id="add-the-fields-1"><span class="me-2">Add the fields:</span><a href="#add-the-fields-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
 <ul>
   <li>Identifier: <code class="language-plaintext highlighter-rouge">numOfDays</code>
     <ul>
@@ -885,8 +957,42 @@
   </li>
 </ul>
 
-<p>Number of days represents the number of days the employee will be working from home, starting on reqDt(the requested date). Reason represents the reason for the request. Once again we save the object.</p>
+<p><code class="language-plaintext highlighter-rouge">numOfDays</code> represents the number of days the employee will be working from home, starting on reqDt(the requested date). <code class="language-plaintext highlighter-rouge">reason</code> represents the reason for the request. Once again we save the object.</p>
 
+<h2 id="defining-our-business-process"><span class="me-2">Defining our business process</span><a href="#defining-our-business-process" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Now, we shall design the business process and define its flow. Because this is a demo application, we’ll keep things simple instead of creating overwhelmingly complex processes.</p>
+
+<blockquote>
+  <h3 id="scenario-reference"><span class="me-2"><em>Scenario Reference</em></span><a href="#scenario-reference" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+  <p>In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the request made by the first actor.</p>
+</blockquote>
+
+<p>Our goal now is to turn the above thoughts into action. Let’s start off by adding a new business process asset into the project and naming it ‘request-portal’. Below is a reference image and a spoiler for what our business process will look like at the end of the day.</p>
+
+<p>ADD REFERENCE IMAGE</p>
+
+<h3 id="submission-stage"><span class="me-2">Submission Stage</span><a href="#submission-stage" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>From the above, we know that our process involves these three stages: submission, processing and a final approval. To represent submission(i.e the start of the process), we will drag a start node(the plain green circle) into our editor space.</p>
+
+<h3 id="processing-stages"><span class="me-2">Processing Stages</span><a href="#processing-stages" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>Now, in the processing stage, we can break it down into two sub-stages: manual filtering by Processing Officers, and the assignment of the appropriate department manager by a Human Resources team.</p>
+
+<p>Since these are tasks assigned to humans, let’s click on the Activities button(can be identified by a plain rounded rectangle on the menu of nodes on the left) and drag in a User node. Then we connect the start node to it. Nodes can be connected together by clicking on the preceding node, selecting the solid arrow icon and dragging it towards the following node. Click on the User node and edit its name to “Manual Filtering” in the Properties window on the right.</p>
+
+<p>If there doesn’t appear to be any window, click on the pencil-paper icon on the upper right corner to expand it.</p>
+
+<p>Then, we drag in another User node, and we then name it “Department Manager Assignment”.</p>
+
+<p>Before connecting the two, we need a BPMN(Business Process Model and Notation) gateway, which can be thought of as a logic gate which helps us implement conditional statements in our process. This gateway is needed to split our results into two cases based on the input of Process Officers. One being an approval from Process Officers where it will lead to the Department Manager Assignment task, and another where it is rejected, and leads to an early-ending and a notice email of rejection to the employee. A list of gateways and what they generally perform can be found <a href="https://www.lucidchart.com/pages/bpmn-symbols-explained#section_4">here</a>.</p>
+
+<p>Let’s click on the Gateways button and drag an “Exclusive” gateway in between our two task nodes. CONTINUE FROM HERE</p>
+
+<p>Now, click on the upper right pencil-paper icon to edit the properties of our process. Then, click on Process Data to expand the list, and there we can edit our process variables. These are variables that we need to keep track of globally throughout the execution of the process. Based on the scenario reference, we know that we’ll need a variable named <code class="language-plaintext highlighter-rouge">employee</code> of data type <code class="language-plaintext highlighter-rouge">Employee</code> which represents the employee who submitted the request. Besides that, we’ll need another variable named <code class="language-plaintext highlighter-rouge">request</code> of data type <code class="language-plaintext highlighter-rouge">Request</code>, which represents the request the employee has submitted. At the end of the day, these two variables will be filled up by the employee looking to submit a request to work from home.</p>
+
+<blockquote>
+  <h4 id="note"><span class="me-2"><em>Note</em></span><a href="#note" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+  <p>There are two terms we need to familiarise ourselves with here. One being Process Definition, and the other Process Instance. Currently, we are creating a process definition, which can be thought of as a base blueprint for a Process Instance. There can be multiple Process Instances, which are created(or ‘instantiated’ when going for proper terms) when the employee wants to submit a request. Each instance is different from each other, primarily based on differences in process variables that are defined by user input(like our <code class="language-plaintext highlighter-rouge">employee</code> and <code class="language-plaintext highlighter-rouge">request</code> variable that needs to be filled up by the requester), but they all follow the same underlying logic and flow according to our Process Definition.</p>
+</blockquote>
 
 </div>
 
@@ -1016,6 +1122,28 @@
 
 
 
+
+  <section id="access-lastmod">
+    <h2 class="panel-heading">Recently Updated</h2>
+    <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/getting-started/">Getting Started</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/introduction/">Introduction</a>
+        </li>
+      
+    </ul>
+  </section>
+  <!-- #access-lastmod -->
 
 
               <!-- The trending tags list -->
