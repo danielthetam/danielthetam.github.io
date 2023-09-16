@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>danielthetam.github.io</title>
   <subtitle>This blog acts as a host for any documentation for my projects, however, if you are interested, my personal blog  can be found at danieltam.com</subtitle>
-  <updated>2023-09-16T14:41:31+08:00</updated>
+  <updated>2023-09-16T17:06:45+08:00</updated>
   <author>
     <name>danielthetam</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,14 @@
 
   
   <entry>
-    <title>Second Post</title>
-    <link href="http://localhost:4000/posts/second-post/" rel="alternate" type="text/html" title="Second Post" />
-    <published>2023-09-16T00:00:00+08:00</published>
+    <title>Getting Started</title>
+    <link href="http://localhost:4000/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
+    <published>2023-09-16T15:30:00+08:00</published>
   
-    <updated>2023-09-16T00:00:00+08:00</updated>
+    <updated>2023-09-16T15:30:00+08:00</updated>
   
-    <id>http://localhost:4000/posts/second-post/</id>
-    <content src="http://localhost:4000/posts/second-post/" />
+    <id>http://localhost:4000/posts/getting-started/</id>
+    <content src="http://localhost:4000/posts/getting-started/" />
     <author>
       <name>danielthetam</name>
     </author>
@@ -48,8 +48,11 @@
 
 
 
-      It’s Our Second Post!
+      Starting the jBPM Server
+Once we have installed jBPM and unzipped its contents, we can begin by navigating to the ‘bin’ folder and running ‘standalone.bat’. This will get the jBPM server up and running. Once the server is up, navigate to Business Central(“https://localhost:8080/business-central/”) where we’ll be met by the Business Central login page.
 
+Getting started with Business Central
+jBPM...
     </summary>
   
 
@@ -59,9 +62,9 @@
   <entry>
     <title>Introduction</title>
     <link href="http://localhost:4000/posts/introduction/" rel="alternate" type="text/html" title="Introduction" />
-    <published>2023-09-16T00:00:00+08:00</published>
+    <published>2023-09-16T15:00:00+08:00</published>
   
-    <updated>2023-09-16T00:00:00+08:00</updated>
+    <updated>2023-09-16T15:00:00+08:00</updated>
   
     <id>http://localhost:4000/posts/introduction/</id>
     <content src="http://localhost:4000/posts/introduction/" />
@@ -85,11 +88,14 @@
 
 
 
-      What is qBPM
-qBPM is a tool for demonstrating how jBPM can be used to create powerful tools through smooth integrations with various open source technologies.
+      
+  Disclaimer
+  I am by no means a professional on the topics mentioned nor the technologies, rather, this documentation is a blog on my experience as an amateur
+and hopefully serves as a light in the dark for beginners or any curious developers looking to perform a little project with business automation.
 
-Purpose of this Documentation
-This documentation will be dedicated to walking you through how you can set up a jBPM server, customise it to fit our needs, utilise jBPM to create automated processes, and integrate them with qBPM, as well ...
+
+What is jBPM?
+jBPM is a business automation tool for automating business processes with...
     </summary>
   
 

@@ -39,24 +39,24 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Second Post" />
+<meta property="og:title" content="Getting Started" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="It’s Our Second Post!" />
-<meta property="og:description" content="It’s Our Second Post!" />
-<link rel="canonical" href="http://localhost:4000/posts/second-post/" />
-<meta property="og:url" content="http://localhost:4000/posts/second-post/" />
+<meta name="description" content="Starting the jBPM Server Once we have installed jBPM and unzipped its contents, we can begin by navigating to the ‘bin’ folder and running ‘standalone.bat’. This will get the jBPM server up and running. Once the server is up, navigate to Business Central(“https://localhost:8080/business-central/”) where we’ll be met by the Business Central login page. Getting started with Business Central jBPM comes with a few default accounts for us to access, one of which includes our primary user, wbadmin, which we will use to log in to Business Central with the password, “wbadmin”. By default, account passwords are the same as their usernames, except for kie-server, which uses the password “kieserver1!”. To access the list of accounts available to us, click on the cog icon on the top right of the screen and click on users. In short, Business Central is a web-based application for users to implement, execute and monitor business processes. Creating our Project Now, we navigate to the Design tab and click on Projects. Next, add a new space named “MySpace”, enter your new space, add a new project and name it “WFHRequest-Portal”. Note: Follow the specified names Please follow the specified names because the application that we will be deploying later does in fact use these names. So make sure each name matches perfectly. Creating Data Objects Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it. In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the reqest made by the first actor. Employee Data Object Now, let’s add a Data Object(which are underlyingly Java object classes with fields you can define) named Employee and package it under “com.myspace.wfhrequest_portal”. Let’s add some fields which define the attributes of each employee. Add the fields: Identifier: eid Label: Employee ID Type: Long Identifier: email Label: Email Type: String Identifier: name Label: Name Type: String We then save the object by clicking on “Save”. Request Data Object We’ll add another Data Object named Request, and package it under “com.myspace.wfhrequest_portal”. Now, we’ll define the attributes for our Request object. Add the fields: Identifier: numOfDays Label: Number of Days Type: Integer Identifier: reason Label: Reason Type: String Identifier: reqDt Label: Rq Dt Type: Integer Number of days represents the number of days the employee will be working from home, starting on reqDt(the requested date). Reason represents the reason for the request. Once again we save the object." />
+<meta property="og:description" content="Starting the jBPM Server Once we have installed jBPM and unzipped its contents, we can begin by navigating to the ‘bin’ folder and running ‘standalone.bat’. This will get the jBPM server up and running. Once the server is up, navigate to Business Central(“https://localhost:8080/business-central/”) where we’ll be met by the Business Central login page. Getting started with Business Central jBPM comes with a few default accounts for us to access, one of which includes our primary user, wbadmin, which we will use to log in to Business Central with the password, “wbadmin”. By default, account passwords are the same as their usernames, except for kie-server, which uses the password “kieserver1!”. To access the list of accounts available to us, click on the cog icon on the top right of the screen and click on users. In short, Business Central is a web-based application for users to implement, execute and monitor business processes. Creating our Project Now, we navigate to the Design tab and click on Projects. Next, add a new space named “MySpace”, enter your new space, add a new project and name it “WFHRequest-Portal”. Note: Follow the specified names Please follow the specified names because the application that we will be deploying later does in fact use these names. So make sure each name matches perfectly. Creating Data Objects Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it. In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the reqest made by the first actor. Employee Data Object Now, let’s add a Data Object(which are underlyingly Java object classes with fields you can define) named Employee and package it under “com.myspace.wfhrequest_portal”. Let’s add some fields which define the attributes of each employee. Add the fields: Identifier: eid Label: Employee ID Type: Long Identifier: email Label: Email Type: String Identifier: name Label: Name Type: String We then save the object by clicking on “Save”. Request Data Object We’ll add another Data Object named Request, and package it under “com.myspace.wfhrequest_portal”. Now, we’ll define the attributes for our Request object. Add the fields: Identifier: numOfDays Label: Number of Days Type: Integer Identifier: reason Label: Reason Type: String Identifier: reqDt Label: Rq Dt Type: Integer Number of days represents the number of days the employee will be working from home, starting on reqDt(the requested date). Reason represents the reason for the request. Once again we save the object." />
+<link rel="canonical" href="http://localhost:4000/posts/getting-started/" />
+<meta property="og:url" content="http://localhost:4000/posts/getting-started/" />
 <meta property="og:site_name" content="danielthetam.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-09-16T00:00:00+08:00" />
+<meta property="article:published_time" content="2023-09-16T15:30:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Second Post" />
+<meta property="twitter:title" content="Getting Started" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-16T00:00:00+08:00","datePublished":"2023-09-16T00:00:00+08:00","description":"It’s Our Second Post!","headline":"Second Post","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/second-post/"},"url":"http://localhost:4000/posts/second-post/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-16T15:30:00+08:00","datePublished":"2023-09-16T15:30:00+08:00","description":"Starting the jBPM Server Once we have installed jBPM and unzipped its contents, we can begin by navigating to the ‘bin’ folder and running ‘standalone.bat’. This will get the jBPM server up and running. Once the server is up, navigate to Business Central(“https://localhost:8080/business-central/”) where we’ll be met by the Business Central login page. Getting started with Business Central jBPM comes with a few default accounts for us to access, one of which includes our primary user, wbadmin, which we will use to log in to Business Central with the password, “wbadmin”. By default, account passwords are the same as their usernames, except for kie-server, which uses the password “kieserver1!”. To access the list of accounts available to us, click on the cog icon on the top right of the screen and click on users. In short, Business Central is a web-based application for users to implement, execute and monitor business processes. Creating our Project Now, we navigate to the Design tab and click on Projects. Next, add a new space named “MySpace”, enter your new space, add a new project and name it “WFHRequest-Portal”. Note: Follow the specified names Please follow the specified names because the application that we will be deploying later does in fact use these names. So make sure each name matches perfectly. Creating Data Objects Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it. In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the reqest made by the first actor. Employee Data Object Now, let’s add a Data Object(which are underlyingly Java object classes with fields you can define) named Employee and package it under “com.myspace.wfhrequest_portal”. Let’s add some fields which define the attributes of each employee. Add the fields: Identifier: eid Label: Employee ID Type: Long Identifier: email Label: Email Type: String Identifier: name Label: Name Type: String We then save the object by clicking on “Save”. Request Data Object We’ll add another Data Object named Request, and package it under “com.myspace.wfhrequest_portal”. Now, we’ll define the attributes for our Request object. Add the fields: Identifier: numOfDays Label: Number of Days Type: Integer Identifier: reason Label: Reason Type: String Identifier: reqDt Label: Rq Dt Type: Integer Number of days represents the number of days the employee will be working from home, starting on reqDt(the requested date). Reason represents the reason for the request. Once again we save the object.","headline":"Getting Started","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/getting-started/"},"url":"http://localhost:4000/posts/getting-started/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Second Post | danielthetam.github.io
+  <title>Getting Started | danielthetam.github.io
   </title>
 
   <!--
@@ -467,7 +467,7 @@
         
           
             
-              <span>Second Post</span>
+              <span>Getting Started</span>
             
 
           
@@ -575,6 +575,18 @@
       
 
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
 
     
 
@@ -584,14 +596,131 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
+
+  
 
   
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
+
+  
 
   
   
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
 
   
 
@@ -604,7 +733,7 @@
 
 
 <header>
-  <h1 data-toc-skip>Second Post</h1>
+  <h1 data-toc-skip>Getting Started</h1>
 
   <div class="post-meta text-muted">
     <!-- published date -->
@@ -620,7 +749,7 @@
 
 <time
   
-  data-ts="1694793600"
+  data-ts="1694849400"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -671,9 +800,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="4 words"
+  title="471 words"
 >
-  <em>1 min</em> read</span>
+  <em>2 min</em> read</span>
 
     </div>
     <!-- .d-flex -->
@@ -682,7 +811,82 @@
 </header>
 
 <div class="content">
-  <h2 id="its-our-second-post"><span class="me-2">It’s Our Second Post!</span><a href="#its-our-second-post" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+  <h2 id="starting-the-jbpm-server"><span class="me-2">Starting the jBPM Server</span><a href="#starting-the-jbpm-server" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Once we have installed jBPM and unzipped its contents, we can begin by navigating to the ‘bin’ folder and running ‘standalone.bat’. This will get the jBPM server up and running. Once the server is up, navigate to Business Central(“https://localhost:8080/business-central/”) where we’ll be met by the Business Central login page.</p>
+
+<h2 id="getting-started-with-business-central"><span class="me-2">Getting started with Business Central</span><a href="#getting-started-with-business-central" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>jBPM comes with a few default accounts for us to access, one of which includes our primary user, wbadmin, which we will use to log in to Business Central with the password, “wbadmin”. By default, account passwords are the same as their usernames, except for kie-server, which uses the password “kieserver1!”. To access the list of accounts available to us, click on the cog icon on the top right of the screen and click on users.</p>
+
+<blockquote>
+  <p>In short, Business Central is a web-based application for users to implement, execute and monitor business processes.</p>
+</blockquote>
+
+<h3 id="creating-our-project"><span class="me-2">Creating our Project</span><a href="#creating-our-project" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>Now, we navigate to the Design tab and click on Projects. Next, add a new space named “MySpace”, enter your new space, add a new project and name it “WFHRequest-Portal”.</p>
+<blockquote>
+  <h4 id="note-follow-the-specified-names"><span class="me-2">Note: Follow the specified names</span><a href="#note-follow-the-specified-names" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+  <p>Please follow the specified names because the application that we will be deploying later does in fact use these names. So make sure each name matches perfectly.</p>
+</blockquote>
+
+<h3 id="creating-data-objects"><span class="me-2">Creating Data Objects</span><a href="#creating-data-objects" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+<p>Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it.</p>
+
+<p>In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the reqest made by the first actor.</p>
+
+<h4 id="employee-data-object"><span class="me-2">Employee Data Object</span><a href="#employee-data-object" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>Now, let’s add a Data Object(which are underlyingly Java object classes with fields you can define) named Employee and package it under “com.myspace.wfhrequest_portal”. Let’s add some fields which define the attributes of each employee.</p>
+
+<h5 id="add-the-fields"><span class="me-2">Add the fields:</span><a href="#add-the-fields" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<ul>
+  <li>Identifier: <code class="language-plaintext highlighter-rouge">eid</code>
+    <ul>
+      <li>Label: <code class="language-plaintext highlighter-rouge">Employee ID</code></li>
+      <li>Type: <code class="language-plaintext highlighter-rouge">Long</code></li>
+    </ul>
+  </li>
+  <li>Identifier: <code class="language-plaintext highlighter-rouge">email</code>
+    <ul>
+      <li>Label: <code class="language-plaintext highlighter-rouge">Email</code></li>
+      <li>Type: <code class="language-plaintext highlighter-rouge">String</code></li>
+    </ul>
+  </li>
+  <li>Identifier: <code class="language-plaintext highlighter-rouge">name</code>
+    <ul>
+      <li>Label: <code class="language-plaintext highlighter-rouge">Name</code></li>
+      <li>Type: <code class="language-plaintext highlighter-rouge">String</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>We then save the object by clicking on “Save”.</p>
+
+<h4 id="request-data-object"><span class="me-2">Request Data Object</span><a href="#request-data-object" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>We’ll add another Data Object named Request, and package it under “com.myspace.wfhrequest_portal”. Now, we’ll define the attributes for our Request object.</p>
+
+<h5 id="add-the-fields-1"><span class="me-2">Add the fields:</span><a href="#add-the-fields-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<ul>
+  <li>Identifier: <code class="language-plaintext highlighter-rouge">numOfDays</code>
+    <ul>
+      <li>Label: <code class="language-plaintext highlighter-rouge">Number of Days</code></li>
+      <li>Type: <code class="language-plaintext highlighter-rouge">Integer</code></li>
+    </ul>
+  </li>
+  <li>Identifier: <code class="language-plaintext highlighter-rouge">reason</code>
+    <ul>
+      <li>Label: <code class="language-plaintext highlighter-rouge">Reason</code></li>
+      <li>Type: <code class="language-plaintext highlighter-rouge">String</code></li>
+    </ul>
+  </li>
+  <li>Identifier: <code class="language-plaintext highlighter-rouge">reqDt</code>
+    <ul>
+      <li>Label: <code class="language-plaintext highlighter-rouge">Rq Dt</code></li>
+      <li>Type: <code class="language-plaintext highlighter-rouge">Integer</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Number of days represents the number of days the employee will be working from home, starting on reqDt(the requested date). Reason represents the reason for the request. Once again we save the object.</p>
+
 
 </div>
 
@@ -730,7 +934,7 @@
     
       
       <a
-        href="https://twitter.com/intent/tweet?text=Second%20Post%20-%20danielthetam.github.io&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fsecond-post%2F"
+        href="https://twitter.com/intent/tweet?text=Getting%20Started%20-%20danielthetam.github.io&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fgetting-started%2F"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Twitter"
@@ -743,7 +947,7 @@
     
       
       <a
-        href="https://www.facebook.com/sharer/sharer.php?title=Second%20Post%20-%20danielthetam.github.io&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fsecond-post%2F"
+        href="https://www.facebook.com/sharer/sharer.php?title=Getting%20Started%20-%20danielthetam.github.io&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fgetting-started%2F"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Facebook"
@@ -756,7 +960,7 @@
     
       
       <a
-        href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fsecond-post%2F&text=Second%20Post%20-%20danielthetam.github.io"
+        href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fgetting-started%2F&text=Getting%20Started%20-%20danielthetam.github.io"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Telegram"
@@ -925,7 +1129,7 @@
   
     class="small"
   
-  data-ts="1694793600"
+  data-ts="1694847600"
   data-df="ll"
   
 >
@@ -941,11 +1145,10 @@
 
 
 
-                  What is qBPM
-qBPM is a tool for demonstrating how jBPM can be used to create powerful tools through smooth integrations with various open source technologies.
-
-Purpose of this Documentation
-This do...
+                  
+  Disclaimer
+  I am by no means a professional on the topics mentioned nor the technologies, rather, this documentation is a blog on my experience as an amateur
+and hopefully serves as a light in ...
                 </p>
               </div>
             </div>
