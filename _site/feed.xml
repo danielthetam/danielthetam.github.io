@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>danielthetam.github.io</title>
   <subtitle>This blog acts as a host for any documentation for my projects, however, if you are interested, my personal blog  can be found at danieltam.com</subtitle>
-  <updated>2023-09-17T00:11:01+08:00</updated>
+  <updated>2023-09-17T12:44:41+08:00</updated>
   <author>
     <name>danielthetam</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,91 @@
 
   
   <entry>
-    <title>Getting Started</title>
-    <link href="http://localhost:4000/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
+    <title>Creating Our Process</title>
+    <link href="http://localhost:4000/posts/creating-our-process/" rel="alternate" type="text/html" title="Creating Our Process" />
     <published>2023-09-16T15:30:00+08:00</published>
   
-    <updated>2023-09-16T17:28:04+08:00</updated>
+    <updated>2023-09-16T15:30:00+08:00</updated>
   
-    <id>http://localhost:4000/posts/getting-started/</id>
-    <content src="http://localhost:4000/posts/getting-started/" />
+    <id>http://localhost:4000/posts/creating-our-process/</id>
+    <content src="http://localhost:4000/posts/creating-our-process/" />
+    <author>
+      <name>danielthetam</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+    <category term="jBPM-qBPM" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+  High-level summary on how a process works
+  There are two terms that we’d ought to familiarise ourselves with here. One being process definition, and the other process instance. Currently, we are creating a process definition, which can be thought of as a base blueprint for a process instance. There can be multiple process instances, which are created(or more properly-termed ‘instantiated’) ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Creating Data Objects and Groups</title>
+    <link href="http://localhost:4000/posts/creating-data-objects/" rel="alternate" type="text/html" title="Creating Data Objects and Groups" />
+    <published>2023-09-16T15:00:00+08:00</published>
+  
+    <updated>2023-09-16T15:00:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/creating-data-objects/</id>
+    <content src="http://localhost:4000/posts/creating-data-objects/" />
+    <author>
+      <name>danielthetam</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+    <category term="jBPM-qBPM" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Creating Data Objects
+Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it.
+
+In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultima...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Getting Started with jBPM</title>
+    <link href="http://localhost:4000/posts/getting-started-with-jbpm/" rel="alternate" type="text/html" title="Getting Started with jBPM" />
+    <published>2023-09-16T15:00:00+08:00</published>
+  
+    <updated>2023-09-16T15:00:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/getting-started-with-jbpm/</id>
+    <content src="http://localhost:4000/posts/getting-started-with-jbpm/" />
     <author>
       <name>danielthetam</name>
     </author>
