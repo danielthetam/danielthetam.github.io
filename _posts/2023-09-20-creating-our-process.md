@@ -1,5 +1,5 @@
 ---
-title: Creating Our Process
+title: Creating Our Business Process
 categories: [Projects,  jBPM-qBPM]
 date: 2023-09-16 15:30:00 +0800
 ---
@@ -31,7 +31,7 @@ Then, we drag in another User node, and we then name it "Department Manager Assi
 ### Implementing conditions with a BPMN gateway
 Before connecting the two, we need a BPMN(Business Process Model and Notation) gateway, which can be thought of as a logic gate which helps us implement conditional statements in our process. This gateway is needed to split our results into two cases based on the output of Manual Filtering sub-stage. One being an approval from Processing Officers where it will lead to the next sub-stage(assignment of department manager), and another where it is rejected, and leads to an early-ending and a notice email of rejection to the employee. A list of gateways and what they generally perform can be found [here](https://www.lucidchart.com/pages/bpmn-symbols-explained#section_4).
 
-Let's click on the Gateways button and drag an "Exclusive" gateway in between our two task nodes, and connect the Manual Filtering node to our gateway. The gateway should then branch out into two paths, but for now, we'll just connect it to our Department Manager Assignment node. 
+Let's click on the Gateways button(orange rhombus) and drag an "Exclusive" gateway in between our two task nodes. Expand the properties window and name it "Processing Officer Decision", and connect the Manual Filtering node to our gateway. The gateway should then branch out into two paths, but for now, we'll just connect it to our Department Manager Assignment node. 
 
 ### Creating our process variables
 Now, we need to define a condition for when the gateway should allow the flow to pass through this branch. We know our condition is that the Processing Officer has to approve of the validity of our request in order for it to pass. Therefore to evaluate this, we need some variable that indicates whether the Processing Officers approve of it or not. This is where process variables come into play. 
@@ -83,3 +83,37 @@ Lastly, add another process variable named `hasBeenApproved`, which is a `Boolea
 Finally, connect our Manual Filtering node to our exclusive gateway, and connect the gateway to our Department Manager Assignment node. Then, click on the arrow leading from the gateway to our Department Manager Assignment node, and open Implementation/Execution. Change the condition expression to `Expression` and add this statement into the field: `hasBeenValidated = true`. Now, this path will only be open when the condition is met. We will handle the opposite case for when the Processing Officer rejects it later on.
 
 ### Creating and configuring our final approval task node
+Now, again, add a new user task node and name it "Department Manager Approval". Connect the Department Manager Assignment node to our new node, and click on our new node. Again, expand Implementation/Execution and enter the following details:
+Task Name: `approveRequest`
+Subject: `Approve the work from home request`
+Actors:
+* `#{manager}`
+    * This statement gets the value of our `manager` process variable and so assigns the task to the manager as specified by our HR team.
+* `wbadmin`
+    * I forgot why
+* Assignments:
+    * Data Inputs And Assignments:
+        * Name: `employee`; Data Type: `com.myspace.wfhrequest_portal.Employee`; Source: `employee`
+        * Name: `request`; Data Type: `com.myspace.wfhrequest_portal.Request`; Source: `request`
+    * Data Outputs And Assignments
+        * Name: `hasBeenApproved`; Data Type: `Boolean`; Source: `hasBeenApproved`
+
+### Creating a new custom task
+jBPM enables us to create our own custom task, one of which includes an automated email task. All we need to do is set up a SMTP server or in our case, we'll use a SMTP hosting service. We will be using an email delivery service called [Elastic Email](https://elasticemail.com/). 
+
+First, create an account and log into it. You'll have to then perform a simple account verification. After that, click on settings, and click on Create SMTP credentials. This will allow us to create new credentials on their domain. Enter your desired email, and click on "Create". A window will pop up displaying your SMTP credentials. Ensure that you note the provided password down as you'll only see it once. 
+
+Now, hop on back to Business Central, head to your project explorer(where you can view all your projects's assets) and click on the "Settings" tab. Click on "Custom Tasks", and install the `email` functionality. Enter the parameters according to what Elastic Email has given you and click `Install`. Now, if you head back to the project explorer, you will see a new asset called `Email`. Once you've verified that, dive back into our business process asset.
+
+### Finishing touches: connecting all our nodes
+Now, connect our Department Manager Approval node to a new exclusive gateway, and name it "Department Manager Decision". This exclusive gateway will determine the path of the process based on the value of `hasBeenApproved`. 
+
+If it is true, it will lead to our custom email task where we email the employee and let them know that their request has been approved.
+
+If it is false, it will let them know that their request has been rejected. 
+
+These tasks will be known as `Approval Notice` and `Rejection Notice`. Now, click on the `Custom Tasks`(icon of cogs) button to add our new custom email task to the editorial space. Name is `Approval Notice`. Then, connect the new exclusive gateway to our new custom task, click on the arrow, and add the following expression: `hasBeenApproved = true and hasBeenValidated = true`. This path will only open when(i.e the approval email will only be sent) when both Processing Officers and Department Manager approve of the request. Finally, add an `End` node and connect the custom task to it to signify the end of the process. 
+
+For now, we know that our process can be lead to Rejection Notice from two paths. First from the rejection of Processing Officers, and second from the approval of Processing Officers, but the rejection of the Department Manager. To combine these two paths, we shall create another exclusive gateway just to organise these two paths into one that leads to the same result. Now, place a new exclusive gateway, and connect our Department Manager Decision gateway to it, click on the arrow, and add the condition: `hasBeenApproved = false or hasBeenValidated = false`. Lastly, also connect our "Processing Officer Decision" gateway to the same gateway, click on the arrow, and add the condition `hasBeenValidated = false`.
+
+Add a new custom email task and name it `Rejection Notice`. Finally, connect our new gateway to this node and connect the email task to another end node. At last, our work for the business process is finished.

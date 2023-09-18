@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>danielthetam.github.io</title>
   <subtitle>This blog acts as a host for any documentation for my projects, however, if you are interested, my personal blog  can be found at danieltam.com</subtitle>
-  <updated>2023-09-17T12:44:41+08:00</updated>
+  <updated>2023-09-18T12:34:59+08:00</updated>
   <author>
     <name>danielthetam</name>
     <uri>http://localhost:4000/</uri>
@@ -20,8 +20,45 @@
 
   
   <entry>
-    <title>Creating Our Process</title>
-    <link href="http://localhost:4000/posts/creating-our-process/" rel="alternate" type="text/html" title="Creating Our Process" />
+    <title>Deploying our Business Process</title>
+    <link href="http://localhost:4000/posts/deploying-our-process/" rel="alternate" type="text/html" title="Deploying our Business Process" />
+    <published>2023-09-16T15:30:00+08:00</published>
+  
+    <updated>2023-09-16T15:30:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/deploying-our-process/</id>
+    <content src="http://localhost:4000/posts/deploying-our-process/" />
+    <author>
+      <name>danielthetam</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+    <category term="jBPM-qBPM" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Creating Our Business Process</title>
+    <link href="http://localhost:4000/posts/creating-our-process/" rel="alternate" type="text/html" title="Creating Our Business Process" />
     <published>2023-09-16T15:30:00+08:00</published>
   
     <updated>2023-09-16T15:30:00+08:00</updated>

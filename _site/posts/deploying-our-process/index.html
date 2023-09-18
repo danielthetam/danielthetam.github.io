@@ -39,24 +39,24 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Creating Data Objects and Groups" />
+<meta property="og:title" content="Deploying our Business Process" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Creating Data Objects Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it. In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the request made by the first actor. Employee Data Object Now, let’s add a Data Object(which are underlyingly Java object classes with fields you can define) named Employee and package it under “com.myspace.wfhrequest_portal”. Let’s add some fields which define the attributes of each employee. Add the fields: Identifier: eid Label: Employee ID Type: Long Identifier: email Label: Email Type: String Identifier: name Label: Name Type: String We then save the object by clicking on “Save”. Request Data Object We’ll add another Data Object named Request, and package it under “com.myspace.wfhrequest_portal”. Now, we’ll define the attributes for our Request object. Add the fields: Identifier: numOfDays Label: Number of Days Type: Integer Identifier: reason Label: Reason Type: String Identifier: reqDt Label: Rq Dt Type: Integer numOfDays represents the number of days the employee will be working from home, starting on reqDt(the requested date). reason represents the reason for the request. Once again we save the object. Creating our groups In jBPM, we have what we call groups. Groups enable us to organise users into their respective teams and/or departments. In our scenario, our groups of actors who process the request can be broken down into two groups. For now, that’s all we have to know. Let’s create the groups by clicking on the cog icon on the top-right corner and clicking on “Groups”. Click “New Group” and name it “HR” for Human Resources. Then, we will be prompted to assign users to that group. We can just assign ourselves to the group. Next, repeat the same step but name the group “ManualFilters”." />
-<meta property="og:description" content="Creating Data Objects Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it. In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the request made by the first actor. Employee Data Object Now, let’s add a Data Object(which are underlyingly Java object classes with fields you can define) named Employee and package it under “com.myspace.wfhrequest_portal”. Let’s add some fields which define the attributes of each employee. Add the fields: Identifier: eid Label: Employee ID Type: Long Identifier: email Label: Email Type: String Identifier: name Label: Name Type: String We then save the object by clicking on “Save”. Request Data Object We’ll add another Data Object named Request, and package it under “com.myspace.wfhrequest_portal”. Now, we’ll define the attributes for our Request object. Add the fields: Identifier: numOfDays Label: Number of Days Type: Integer Identifier: reason Label: Reason Type: String Identifier: reqDt Label: Rq Dt Type: Integer numOfDays represents the number of days the employee will be working from home, starting on reqDt(the requested date). reason represents the reason for the request. Once again we save the object. Creating our groups In jBPM, we have what we call groups. Groups enable us to organise users into their respective teams and/or departments. In our scenario, our groups of actors who process the request can be broken down into two groups. For now, that’s all we have to know. Let’s create the groups by clicking on the cog icon on the top-right corner and clicking on “Groups”. Click “New Group” and name it “HR” for Human Resources. Then, we will be prompted to assign users to that group. We can just assign ourselves to the group. Next, repeat the same step but name the group “ManualFilters”." />
-<link rel="canonical" href="http://localhost:4000/posts/creating-data-objects/" />
-<meta property="og:url" content="http://localhost:4000/posts/creating-data-objects/" />
+<meta name="description" content="This blog acts as a host for any documentation for my projects, however, if you are interested, my personal blog can be found at danieltam.com" />
+<meta property="og:description" content="This blog acts as a host for any documentation for my projects, however, if you are interested, my personal blog can be found at danieltam.com" />
+<link rel="canonical" href="http://localhost:4000/posts/deploying-our-process/" />
+<meta property="og:url" content="http://localhost:4000/posts/deploying-our-process/" />
 <meta property="og:site_name" content="danielthetam.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-09-16T15:00:00+08:00" />
+<meta property="article:published_time" content="2023-09-16T15:30:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Creating Data Objects and Groups" />
+<meta property="twitter:title" content="Deploying our Business Process" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-16T15:00:00+08:00","datePublished":"2023-09-16T15:00:00+08:00","description":"Creating Data Objects Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it. In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the request made by the first actor. Employee Data Object Now, let’s add a Data Object(which are underlyingly Java object classes with fields you can define) named Employee and package it under “com.myspace.wfhrequest_portal”. Let’s add some fields which define the attributes of each employee. Add the fields: Identifier: eid Label: Employee ID Type: Long Identifier: email Label: Email Type: String Identifier: name Label: Name Type: String We then save the object by clicking on “Save”. Request Data Object We’ll add another Data Object named Request, and package it under “com.myspace.wfhrequest_portal”. Now, we’ll define the attributes for our Request object. Add the fields: Identifier: numOfDays Label: Number of Days Type: Integer Identifier: reason Label: Reason Type: String Identifier: reqDt Label: Rq Dt Type: Integer numOfDays represents the number of days the employee will be working from home, starting on reqDt(the requested date). reason represents the reason for the request. Once again we save the object. Creating our groups In jBPM, we have what we call groups. Groups enable us to organise users into their respective teams and/or departments. In our scenario, our groups of actors who process the request can be broken down into two groups. For now, that’s all we have to know. Let’s create the groups by clicking on the cog icon on the top-right corner and clicking on “Groups”. Click “New Group” and name it “HR” for Human Resources. Then, we will be prompted to assign users to that group. We can just assign ourselves to the group. Next, repeat the same step but name the group “ManualFilters”.","headline":"Creating Data Objects and Groups","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/creating-data-objects/"},"url":"http://localhost:4000/posts/creating-data-objects/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-16T15:30:00+08:00","datePublished":"2023-09-16T15:30:00+08:00","description":"This blog acts as a host for any documentation for my projects, however, if you are interested, my personal blog can be found at danieltam.com","headline":"Deploying our Business Process","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/deploying-our-process/"},"url":"http://localhost:4000/posts/deploying-our-process/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Creating Data Objects and Groups | danielthetam.github.io
+  <title>Deploying our Business Process | danielthetam.github.io
   </title>
 
   <!--
@@ -467,7 +467,7 @@
         
           
             
-              <span>Creating Data Objects and Groups</span>
+              <span>Deploying our Business Process</span>
             
 
           
@@ -556,119 +556,14 @@
   
 
   
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-
-    
-
-  
 
   
   
 
   
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-
-    
-
-  
 
   
   
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-
-    
 
   
 
@@ -686,7 +581,7 @@
 
 
 <header>
-  <h1 data-toc-skip>Creating Data Objects and Groups</h1>
+  <h1 data-toc-skip>Deploying our Business Process</h1>
 
   <div class="post-meta text-muted">
     <!-- published date -->
@@ -702,7 +597,7 @@
 
 <time
   
-  data-ts="1694847600"
+  data-ts="1694849400"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -753,7 +648,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="359 words"
+  title="0 words"
 >
   <em>1 min</em> read</span>
 
@@ -764,70 +659,7 @@
 </header>
 
 <div class="content">
-  <h2 id="creating-data-objects"><span class="me-2">Creating Data Objects</span><a href="#creating-data-objects" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it.</p>
-
-<p>In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the request made by the first actor.</p>
-
-<h3 id="employee-data-object"><span class="me-2">Employee Data Object</span><a href="#employee-data-object" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p>Now, let’s add a Data Object(which are underlyingly Java object classes with fields you can define) named Employee and package it under “com.myspace.wfhrequest_portal”. Let’s add some fields which define the attributes of each employee.</p>
-
-<h4 id="add-the-fields"><span class="me-2">Add the fields:</span><a href="#add-the-fields" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-<ul>
-  <li>Identifier: <code class="language-plaintext highlighter-rouge">eid</code>
-    <ul>
-      <li>Label: <code class="language-plaintext highlighter-rouge">Employee ID</code></li>
-      <li>Type: <code class="language-plaintext highlighter-rouge">Long</code></li>
-    </ul>
-  </li>
-  <li>Identifier: <code class="language-plaintext highlighter-rouge">email</code>
-    <ul>
-      <li>Label: <code class="language-plaintext highlighter-rouge">Email</code></li>
-      <li>Type: <code class="language-plaintext highlighter-rouge">String</code></li>
-    </ul>
-  </li>
-  <li>Identifier: <code class="language-plaintext highlighter-rouge">name</code>
-    <ul>
-      <li>Label: <code class="language-plaintext highlighter-rouge">Name</code></li>
-      <li>Type: <code class="language-plaintext highlighter-rouge">String</code></li>
-    </ul>
-  </li>
-</ul>
-
-<p>We then save the object by clicking on “Save”.</p>
-
-<h3 id="request-data-object"><span class="me-2">Request Data Object</span><a href="#request-data-object" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<p>We’ll add another Data Object named Request, and package it under “com.myspace.wfhrequest_portal”. Now, we’ll define the attributes for our Request object.</p>
-
-<h4 id="add-the-fields-1"><span class="me-2">Add the fields:</span><a href="#add-the-fields-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-<ul>
-  <li>Identifier: <code class="language-plaintext highlighter-rouge">numOfDays</code>
-    <ul>
-      <li>Label: <code class="language-plaintext highlighter-rouge">Number of Days</code></li>
-      <li>Type: <code class="language-plaintext highlighter-rouge">Integer</code></li>
-    </ul>
-  </li>
-  <li>Identifier: <code class="language-plaintext highlighter-rouge">reason</code>
-    <ul>
-      <li>Label: <code class="language-plaintext highlighter-rouge">Reason</code></li>
-      <li>Type: <code class="language-plaintext highlighter-rouge">String</code></li>
-    </ul>
-  </li>
-  <li>Identifier: <code class="language-plaintext highlighter-rouge">reqDt</code>
-    <ul>
-      <li>Label: <code class="language-plaintext highlighter-rouge">Rq Dt</code></li>
-      <li>Type: <code class="language-plaintext highlighter-rouge">Integer</code></li>
-    </ul>
-  </li>
-</ul>
-
-<p><code class="language-plaintext highlighter-rouge">numOfDays</code> represents the number of days the employee will be working from home, starting on reqDt(the requested date). <code class="language-plaintext highlighter-rouge">reason</code> represents the reason for the request. Once again we save the object.</p>
-
-<h2 id="creating-our-groups"><span class="me-2">Creating our groups</span><a href="#creating-our-groups" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>In jBPM, we have what we call groups. Groups enable us to organise users into their respective teams and/or departments. In our scenario, our groups of actors who process the request can be broken down into two groups. For now, that’s all we have to know.</p>
-
-<p>Let’s create the groups by clicking on the cog icon on the top-right corner and clicking on “Groups”. Click “New Group” and name it “HR” for Human Resources. Then, we will be prompted to assign users to that group. We can just assign ourselves to the group. Next, repeat the same step but name the group “ManualFilters”.</p>
-
+  
 
 </div>
 
@@ -875,7 +707,7 @@
     
       
       <a
-        href="https://twitter.com/intent/tweet?text=Creating%20Data%20Objects%20and%20Groups%20-%20danielthetam.github.io&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fcreating-data-objects%2F"
+        href="https://twitter.com/intent/tweet?text=Deploying%20our%20Business%20Process%20-%20danielthetam.github.io&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fdeploying-our-process%2F"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Twitter"
@@ -888,7 +720,7 @@
     
       
       <a
-        href="https://www.facebook.com/sharer/sharer.php?title=Creating%20Data%20Objects%20and%20Groups%20-%20danielthetam.github.io&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fcreating-data-objects%2F"
+        href="https://www.facebook.com/sharer/sharer.php?title=Deploying%20our%20Business%20Process%20-%20danielthetam.github.io&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fdeploying-our-process%2F"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Facebook"
@@ -901,7 +733,7 @@
     
       
       <a
-        href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fcreating-data-objects%2F&text=Creating%20Data%20Objects%20and%20Groups%20-%20danielthetam.github.io"
+        href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fdeploying-our-process%2F&text=Deploying%20our%20Business%20Process%20-%20danielthetam.github.io"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Telegram"
@@ -1001,11 +833,6 @@
 
 
 
-  <section id="toc-wrapper" class="ps-0 pe-4 mb-5">
-    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
-    <nav id="toc"></nav>
-  </section>
-
 
             
           </aside>
@@ -1043,31 +870,31 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
@@ -1187,7 +1014,7 @@ Once we have installed jBPM and unzipped its contents, we can begin by navigatin
         </article>
       
         <article class="col">
-          <a href="/posts/creating-our-process/" class="post-preview card h-100">
+          <a href="/posts/creating-data-objects/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1201,14 +1028,14 @@ Once we have installed jBPM and unzipped its contents, we can begin by navigatin
   
     class="small"
   
-  data-ts="1694849400"
+  data-ts="1694847600"
   data-df="ll"
   
 >
   Sep 16, 2023
 </time>
 
-              <h4 class="pt-0 my-2">Creating Our Business Process</h4>
+              <h4 class="pt-0 my-2">Creating Data Objects and Groups</h4>
               <div class="text-muted small">
                 <p>
                   
@@ -1217,9 +1044,8 @@ Once we have installed jBPM and unzipped its contents, we can begin by navigatin
 
 
 
-                  
-  High-level summary on how a process works
-  There are two terms that we’d ought to familiarise ourselves with here. One being process definition, and the other process instance. Currently, we ar...
+                  Creating Data Objects
+Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a sce...
                 </p>
               </div>
             </div>
@@ -1241,22 +1067,18 @@ Once we have installed jBPM and unzipped its contents, we can begin by navigatin
 
   
     <a
-      href="/posts/getting-started-with-jbpm/"
+      href="/posts/creating-our-process/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Getting Started with jBPM</p>
+      <p>Creating Our Business Process</p>
     </a>
   
 
   
-    <a
-      href="/posts/creating-our-process/"
-      class="btn btn-outline-primary"
-      aria-label="Newer"
-    >
-      <p>Creating Our Business Process</p>
-    </a>
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
   
 </nav>
 
@@ -1467,16 +1289,9 @@ Once we have installed jBPM and unzipped its contents, we can begin by navigatin
 
   
 
-  
-    
-
-    
-
-  
 
 
-
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/lazysizes@5.3.2/lazysizes.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.9/dayjs.min.js,npm/dayjs@1.11.9/locale/en.min.js,npm/dayjs@1.11.9/plugin/relativeTime.min.js,npm/dayjs@1.11.9/plugin/localizedFormat.min.js,npm/tocbot@4.21.1/dist/tocbot.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/lazysizes@5.3.2/lazysizes.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.9/dayjs.min.js,npm/dayjs@1.11.9/locale/en.min.js,npm/dayjs@1.11.9/plugin/relativeTime.min.js,npm/dayjs@1.11.9/plugin/localizedFormat.min.js"></script>
 
 
 
