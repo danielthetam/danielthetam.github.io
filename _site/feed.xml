@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>danielthetam.github.io</title>
   <subtitle>This blog acts as a host for any documentation for my projects, however, if you are interested, my personal blog  can be found at danieltam.com</subtitle>
-  <updated>2023-09-18T12:51:29+08:00</updated>
+  <updated>2023-09-18T17:47:17+08:00</updated>
   <author>
     <name>danielthetam</name>
     <uri>http://localhost:4000/</uri>
@@ -24,7 +24,7 @@
     <link href="http://localhost:4000/posts/deploying-our-process/" rel="alternate" type="text/html" title="Deploying our Business Process" />
     <published>2023-09-16T15:30:00+08:00</published>
   
-    <updated>2023-09-16T15:30:00+08:00</updated>
+    <updated>2023-09-18T13:35:45+08:00</updated>
   
     <id>http://localhost:4000/posts/deploying-our-process/</id>
     <content src="http://localhost:4000/posts/deploying-our-process/" />
@@ -48,8 +48,8 @@
 
 
 
-      
-
+      Deploying our project
+Before we deploy our project, we need to generate the forms required for our process. To do this, head into our request-portal process, click on the form button(form icon to the left of the Download button), and click Generate all forms. This will generate all dedicated forms for our business process. Once generated, we should see some new form assets in our project. Now, ...
     </summary>
   
 
@@ -61,7 +61,7 @@
     <link href="http://localhost:4000/posts/creating-our-process/" rel="alternate" type="text/html" title="Creating Our Business Process" />
     <published>2023-09-16T15:30:00+08:00</published>
   
-    <updated>2023-09-18T12:36:33+08:00</updated>
+    <updated>2023-09-18T13:35:45+08:00</updated>
   
     <id>http://localhost:4000/posts/creating-our-process/</id>
     <content src="http://localhost:4000/posts/creating-our-process/" />
