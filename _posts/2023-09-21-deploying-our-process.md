@@ -11,4 +11,6 @@ Now, head over to the form named `WFHRequest-Portal.request-portal-taskform`. Th
 Once complete, we can exit to the project explorer and hit `Deploy` to deploy our project. 
 
 ## Testing our project
-Once the project has finished building
+Once the project has finished building, you can click the Menu button and click on the process definition tab. Click on the vertical ellipsis and click start to create a new process instance. Next, fill in the form details. 
+
+Now, click on the Menu again and click on the Task Inbox. Through there, you can access user tasks assigned to you or your group. You may then monitor each process instances's process 
