@@ -39,24 +39,24 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Introduction" />
+<meta property="og:title" content="Preparation for jBPM integration" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Disclaimer I am by no means a professional on the topics mentioned nor the technologies, rather, this documentation is a blog on my experience as an amateur and hopefully serves as a light in the dark for beginners or any curious developers looking to perform a little project with business automation." />
-<meta property="og:description" content="Disclaimer I am by no means a professional on the topics mentioned nor the technologies, rather, this documentation is a blog on my experience as an amateur and hopefully serves as a light in the dark for beginners or any curious developers looking to perform a little project with business automation." />
-<link rel="canonical" href="http://localhost:4000/posts/introduction/" />
-<meta property="og:url" content="http://localhost:4000/posts/introduction/" />
+<meta name="description" content="How does integration work? As previously mentioned, jBPM allows for smooth integration with its accesible and well-secured REST API. It enables us to create our own powerful tools that act as an extension of jBPM, an example of such is the one I’ve created for demonstrative purposes, qBPM. Before we begin, we need to understand the structure of qBPM. qBPM uses a React frontend and a SpringBoot backend. Aside from serving as our application’s API, SpringBoot serves as a proxy between jBPM and our client-side due to browser CORS policies preventing us from sending requests to jBPM(at least for me). Besides, I find it more organised to only have my client application only call from a single domain. Configuring jBPM Before we begin downloading the codebase and setting things up, we need to configure our jBPM’s system settings. As previously mentioned, jBPM’s REST API requires authentication to access it. That’s why we use wbadmin as our system admin account and use its credentials for authentication. However, when we want to get tasks specific to a user, let’s name them User B, by default it only returns tasks that are available for the user that we use for authentication(i.e wbadmin’s tasks). In order to get the tasks for User B while using wbadmin’s credentials instead of User B’s credentials, we need to enable bypass authentication in jBPM’s configuration. We can’t use User B’s credentials because their passwords are hashed Let’s get straight to that. Navigate to jBPM’s root folder, enter the standalone folder, enter configuration, and edit standalone.xml. Under the &lt;system-properties&gt; tag, add the line: &lt;property name=&quot;org.kie.server.bypass.auth.user&quot; value=&quot;true&quot;/&gt;. Save it, and restart jBPM." />
+<meta property="og:description" content="How does integration work? As previously mentioned, jBPM allows for smooth integration with its accesible and well-secured REST API. It enables us to create our own powerful tools that act as an extension of jBPM, an example of such is the one I’ve created for demonstrative purposes, qBPM. Before we begin, we need to understand the structure of qBPM. qBPM uses a React frontend and a SpringBoot backend. Aside from serving as our application’s API, SpringBoot serves as a proxy between jBPM and our client-side due to browser CORS policies preventing us from sending requests to jBPM(at least for me). Besides, I find it more organised to only have my client application only call from a single domain. Configuring jBPM Before we begin downloading the codebase and setting things up, we need to configure our jBPM’s system settings. As previously mentioned, jBPM’s REST API requires authentication to access it. That’s why we use wbadmin as our system admin account and use its credentials for authentication. However, when we want to get tasks specific to a user, let’s name them User B, by default it only returns tasks that are available for the user that we use for authentication(i.e wbadmin’s tasks). In order to get the tasks for User B while using wbadmin’s credentials instead of User B’s credentials, we need to enable bypass authentication in jBPM’s configuration. We can’t use User B’s credentials because their passwords are hashed Let’s get straight to that. Navigate to jBPM’s root folder, enter the standalone folder, enter configuration, and edit standalone.xml. Under the &lt;system-properties&gt; tag, add the line: &lt;property name=&quot;org.kie.server.bypass.auth.user&quot; value=&quot;true&quot;/&gt;. Save it, and restart jBPM." />
+<link rel="canonical" href="http://localhost:4000/posts/preparation-for-integration/" />
+<meta property="og:url" content="http://localhost:4000/posts/preparation-for-integration/" />
 <meta property="og:site_name" content="danielthetam.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-09-16T15:00:00+08:00" />
+<meta property="article:published_time" content="2023-09-16T15:30:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Introduction" />
+<meta property="twitter:title" content="Preparation for jBPM integration" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-16T17:07:15+08:00","datePublished":"2023-09-16T15:00:00+08:00","description":"Disclaimer I am by no means a professional on the topics mentioned nor the technologies, rather, this documentation is a blog on my experience as an amateur and hopefully serves as a light in the dark for beginners or any curious developers looking to perform a little project with business automation.","headline":"Introduction","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/introduction/"},"url":"http://localhost:4000/posts/introduction/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-16T15:30:00+08:00","datePublished":"2023-09-16T15:30:00+08:00","description":"How does integration work? As previously mentioned, jBPM allows for smooth integration with its accesible and well-secured REST API. It enables us to create our own powerful tools that act as an extension of jBPM, an example of such is the one I’ve created for demonstrative purposes, qBPM. Before we begin, we need to understand the structure of qBPM. qBPM uses a React frontend and a SpringBoot backend. Aside from serving as our application’s API, SpringBoot serves as a proxy between jBPM and our client-side due to browser CORS policies preventing us from sending requests to jBPM(at least for me). Besides, I find it more organised to only have my client application only call from a single domain. Configuring jBPM Before we begin downloading the codebase and setting things up, we need to configure our jBPM’s system settings. As previously mentioned, jBPM’s REST API requires authentication to access it. That’s why we use wbadmin as our system admin account and use its credentials for authentication. However, when we want to get tasks specific to a user, let’s name them User B, by default it only returns tasks that are available for the user that we use for authentication(i.e wbadmin’s tasks). In order to get the tasks for User B while using wbadmin’s credentials instead of User B’s credentials, we need to enable bypass authentication in jBPM’s configuration. We can’t use User B’s credentials because their passwords are hashed Let’s get straight to that. Navigate to jBPM’s root folder, enter the standalone folder, enter configuration, and edit standalone.xml. Under the &lt;system-properties&gt; tag, add the line: &lt;property name=&quot;org.kie.server.bypass.auth.user&quot; value=&quot;true&quot;/&gt;. Save it, and restart jBPM.","headline":"Preparation for jBPM integration","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/preparation-for-integration/"},"url":"http://localhost:4000/posts/preparation-for-integration/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Introduction | danielthetam.github.io
+  <title>Preparation for jBPM integration | danielthetam.github.io
   </title>
 
   <!--
@@ -470,7 +470,7 @@
         
           
             
-              <span>Introduction</span>
+              <span>Preparation for jBPM integration</span>
             
 
           
@@ -590,42 +590,6 @@
       
 
     
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
 
     
 
@@ -638,41 +602,6 @@
 
   
   
-
-  
-    
-    
-
-    
-      
-        
-        
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-      
-
-      
-      
-
-      
-      
-      
-
-      
-
-    
-
-    
 
   
 
@@ -690,7 +619,7 @@
 
 
 <header>
-  <h1 data-toc-skip>Introduction</h1>
+  <h1 data-toc-skip>Preparation for jBPM integration</h1>
 
   <div class="post-meta text-muted">
     <!-- published date -->
@@ -706,7 +635,7 @@
 
 <time
   
-  data-ts="1694847600"
+  data-ts="1694849400"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -718,29 +647,6 @@
     </span>
 
     <!-- lastmod date -->
-    
-      <span>
-        Updated
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-  data-ts="1694855235"
-  data-df="ll"
-  
-    data-bs-toggle="tooltip" data-bs-placement="bottom"
-  
->
-  Sep 16, 2023
-</time>
-
-      </span>
     
 
     
@@ -780,9 +686,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="360 words"
+  title="272 words"
 >
-  <em>2 min</em> read</span>
+  <em>1 min</em> read</span>
 
     </div>
     <!-- .d-flex -->
@@ -791,47 +697,21 @@
 </header>
 
 <div class="content">
-  <blockquote>
-  <h4 id="disclaimer"><span class="me-2">Disclaimer</span><a href="#disclaimer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-  <p>I am by no means a professional on the topics mentioned nor the technologies, rather, this documentation is a blog on my experience as an amateur
-and hopefully serves as a light in the dark for beginners or any curious developers looking to perform a little project with business automation.</p>
-</blockquote>
+  <h2 id="how-does-integration-work"><span class="me-2">How does integration work?</span><a href="#how-does-integration-work" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>As previously mentioned, jBPM allows for smooth integration with its accesible and well-secured REST API. It enables us to create our own powerful tools that act as an extension of jBPM, an example of such is the one I’ve created for demonstrative purposes, qBPM.</p>
 
-<h2 id="what-is-jbpm"><span class="me-2">What is jBPM?</span><a href="#what-is-jbpm" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p><a href="https://jbpm.org">jBPM</a> is a business automation tool for automating business processes with ease, and providing accessibility through REST APIs and comprehensive documentation for said APIs. Optionally, with jBPM as a foundation, we can also build our own powerful applications and tools to personalise our experience, one of which includes <a href="https://github.com/danielthetam/qBPM">qBPM</a>.</p>
+<p>Before we begin, we need to understand the structure of qBPM. qBPM uses a React frontend and a SpringBoot backend. Aside from serving as our application’s API, SpringBoot serves as a proxy between jBPM and our client-side due to browser CORS policies preventing us from sending requests to jBPM(at least for me). Besides, I find it more organised to only have my client application only call from a single domain.</p>
 
-<h2 id="what-is-qbpm"><span class="me-2">What is qBPM?</span><a href="#what-is-qbpm" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p><a href="https://github.com/danielthetam/qBPM">qBPM</a> is a demonstrative web application for showcasing how <a href="https://jbpm.org">jBPM</a> can be used to create powerful tools through smooth integrations with various open source technologies.</p>
+<h2 id="configuring-jbpm"><span class="me-2">Configuring jBPM</span><a href="#configuring-jbpm" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Before we begin downloading the codebase and setting things up, we need to configure our jBPM’s system settings. As previously mentioned, jBPM’s REST API requires authentication to access it. That’s why we use <code class="language-plaintext highlighter-rouge">wbadmin</code> as our system admin account and use its credentials for authentication.</p>
 
-<h2 id="purpose-of-this-documentation"><span class="me-2">Purpose of this Documentation</span><a href="#purpose-of-this-documentation" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>This documentation will be dedicated to walking you through how you can set up a <a href="https://jbpm.org">jBPM</a> server, customise it to fit our needs, utilise <a href="https://jbpm.org">jBPM</a> to create automated processes, and integrate them with <a href="https://github.com/danielthetam/qBPM">qBPM</a>, our own custom webapp for presenting these automated processes.</p>
-
-<h2 id="what-will-we-be-creating-in-this-walkthrough"><span class="me-2">What will we be creating in this walkthrough?</span><a href="#what-will-we-be-creating-in-this-walkthrough" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<p>We will be using jBPM to create a work from home request portal to automate the process of requesting to work from home. This will help ease the lives of our HR team as well as employees.</p>
-
-<h2 id="prerequisites"><span class="me-2">Prerequisites</span><a href="#prerequisites" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<ul>
-  <li><a href="https://www.jbpm.org/download/community.html">Installation of jBPM Server Distribution</a></li>
-  <li><a href="https://nodejs.org/en/download">Node.js LTS</a></li>
-  <li><a href="https://www.postgresql.org/download/">Postgres setup</a>
-    <ul>
-      <li>Only install the setup and do not open it yet unless you know what you’re doing as I will be guiding you through this due to important configurations you need to follow for qBPM to work.</li>
-    </ul>
-  </li>
-  <li><a href="https://www.oracle.com/uk/java/technologies/downloads/#jdk17-windows">JDK 17</a></li>
-  <li><a href="https://maven.apache.org/download.cgi">Stable version of Apache Maven</a></li>
-  <li><a href="https://code.visualstudio.com/download">Visual Studio Code</a></li>
-</ul>
+<p>However, when we want to get tasks specific to a user, let’s name them User B, by default it only returns tasks that are available for the user that we use for authentication(i.e wbadmin’s tasks). In order to get the tasks for User B while using <code class="language-plaintext highlighter-rouge">wbadmin</code>’s credentials instead of User B’s credentials, we need to enable bypass authentication in jBPM’s configuration.</p>
 
 <blockquote>
-  <p>I recommend that you watch videos or read an article on how to install the software above besides jBPM(<em>it’s just a straightforward zip file</em>) as they will guide you through the installation process step by step. It can be confusing as a beginner when you see all the cryptic installation configurations.</p>
+  <p>We can’t use User B’s credentials because their passwords are <a href="https://www.okta.com/blog/2019/03/what-are-salted-passwords-and-password-hashing/#:~:text=Password%20hashing%20is%20defined%20as,unintelligible%20to%20the%20bad%20actor">hashed</a></p>
 </blockquote>
 
-<blockquote>
-  <h4 id="note"><span class="me-2">Note</span><a href="#note" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-  <p>Every process mentioned in this documentation is based on my experience in Windows 10, so do keep in mind that results may vary from operating system to operating system</p>
-</blockquote>
-
+<p>Let’s get straight to that. Navigate to jBPM’s root folder, enter the <code class="language-plaintext highlighter-rouge">standalone</code> folder, enter <code class="language-plaintext highlighter-rouge">configuration</code>, and edit <code class="language-plaintext highlighter-rouge">standalone.xml</code>. Under the <code class="language-plaintext highlighter-rouge">&lt;system-properties&gt;</code> tag, add the line: <code class="language-plaintext highlighter-rouge">&lt;property name="org.kie.server.bypass.auth.user" value="true"/&gt;</code>. Save it, and restart jBPM.</p>
 
 </div>
 
@@ -879,7 +759,7 @@ and hopefully serves as a light in the dark for beginners or any curious develop
     
       
       <a
-        href="https://twitter.com/intent/tweet?text=Introduction%20-%20danielthetam.github.io&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fintroduction%2F"
+        href="https://twitter.com/intent/tweet?text=Preparation%20for%20jBPM%20integration%20-%20danielthetam.github.io&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpreparation-for-integration%2F"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Twitter"
@@ -892,7 +772,7 @@ and hopefully serves as a light in the dark for beginners or any curious develop
     
       
       <a
-        href="https://www.facebook.com/sharer/sharer.php?title=Introduction%20-%20danielthetam.github.io&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fintroduction%2F"
+        href="https://www.facebook.com/sharer/sharer.php?title=Preparation%20for%20jBPM%20integration%20-%20danielthetam.github.io&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpreparation-for-integration%2F"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Facebook"
@@ -905,7 +785,7 @@ and hopefully serves as a light in the dark for beginners or any curious develop
     
       
       <a
-        href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fintroduction%2F&text=Introduction%20-%20danielthetam.github.io"
+        href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpreparation-for-integration%2F&text=Preparation%20for%20jBPM%20integration%20-%20danielthetam.github.io"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Telegram"
@@ -1085,67 +965,67 @@ and hopefully serves as a light in the dark for beginners or any curious develop
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -1159,6 +1039,47 @@ and hopefully serves as a light in the dark for beginners or any curious develop
   <aside id="related-posts" aria-labelledby="related-label">
     <h3 class="mb-4" id="related-label">Further Reading</h3>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/posts/introduction/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+    class="small"
+  
+  data-ts="1694847600"
+  data-df="ll"
+  
+>
+  Sep 16, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Introduction</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  
+  Disclaimer
+  I am by no means a professional on the topics mentioned nor the technologies, rather, this documentation is a blog on my experience as an amateur
+and hopefully serves as a light in ...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
       
         <article class="col">
           <a href="/posts/getting-started-with-jbpm/" class="post-preview card h-100">
@@ -1238,46 +1159,6 @@ Now, we will begin adding our assets. First, let’s clarify what objects we’d
           </a>
         </article>
       
-        <article class="col">
-          <a href="/posts/creating-our-process/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-    class="small"
-  
-  data-ts="1694849400"
-  data-df="ll"
-  
->
-  Sep 16, 2023
-</time>
-
-              <h4 class="pt-0 my-2">Creating Our Business Process</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  
-  High-level summary on how a process works
-  There are two terms that we’d ought to familiarise ourselves with here. One being process definition, and the other process instance. Currently, we ar...
-                </p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
     </nav>
   </aside>
   <!-- #related-posts -->
@@ -1292,18 +1173,22 @@ Now, we will begin adding our assets. First, let’s clarify what objects we’d
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Older">
-      <p>-</p>
-    </div>
+    <a
+      href="/posts/deploying-our-process/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>Deploying our Business Process</p>
+    </a>
   
 
   
     <a
-      href="/posts/getting-started-with-jbpm/"
+      href="/posts/integrating-with-jbpm/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>Getting Started with jBPM</p>
+      <p>Integrating with jBPM</p>
     </a>
   
 </nav>

@@ -22,10 +22,13 @@ We will be using jBPM to create a work from home request portal to automate the 
 ## Prerequisites
 * [Installation of jBPM Server Distribution](https://www.jbpm.org/download/community.html)
 * [Node.js LTS](https://nodejs.org/en/download)
-* [Postgres](https://www.postgresql.org/download/)
+* [Postgres setup](https://www.postgresql.org/download/)
+   * Only install the setup and do not open it yet unless you know what you're doing as I will be guiding you through this due to important configurations you need to follow for qBPM to work.
 * [JDK 17](https://www.oracle.com/uk/java/technologies/downloads/#jdk17-windows)
 * [Stable version of Apache Maven](https://maven.apache.org/download.cgi)
 * [Visual Studio Code](https://code.visualstudio.com/download)
+
+> I recommend that you watch videos or read an article on how to install the software above besides jBPM(*it's just a straightforward zip file*) as they will guide you through the installation process step by step. It can be confusing as a beginner when you see all the cryptic installation configurations.
 
 > #### Note
 > Every process mentioned in this documentation is based on my experience in Windows 10, so do keep in mind that results may vary from operating system to operating system

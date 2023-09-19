@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>danielthetam.github.io</title>
   <subtitle>This blog acts as a host for any documentation for my projects, however, if you are interested, my personal blog  can be found at danieltam.com</subtitle>
-  <updated>2023-09-18T21:09:33+08:00</updated>
+  <updated>2023-09-19T23:39:05+08:00</updated>
   <author>
     <name>danielthetam</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,126 @@
 
   
   <entry>
+    <title>Errors to Note</title>
+    <link href="http://localhost:4000/posts/errors-to-note/" rel="alternate" type="text/html" title="Errors to Note" />
+    <published>2023-09-16T15:30:00+08:00</published>
+  
+    <updated>2023-09-16T15:30:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/errors-to-note/</id>
+    <content src="http://localhost:4000/posts/errors-to-note/" />
+    <author>
+      <name>danielthetam</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+    <category term="jBPM-qBPM" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      If SpringBoot produces an error that states that the port is in use, that means you have to navigate back to the application.properties file and change the server port to any open port on your device. Any other errors that come up, do search it up, or as a last resort, you may contact me from my website.
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Integrating with jBPM</title>
+    <link href="http://localhost:4000/posts/integrating-with-jbpm/" rel="alternate" type="text/html" title="Integrating with jBPM" />
+    <published>2023-09-16T15:30:00+08:00</published>
+  
+    <updated>2023-09-16T15:30:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/integrating-with-jbpm/</id>
+    <content src="http://localhost:4000/posts/integrating-with-jbpm/" />
+    <author>
+      <name>danielthetam</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+    <category term="jBPM-qBPM" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Setting up our Postgres database
+Open your Postgres setup, and just step through everything while following the default configurations, but ensure that you note down your password and your host, and also make sure that Command Line Tools is ticked as an installation configuration.
+
+After installation, search for psql in your search bar and open the application. Once you open it, you’ll see some...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Preparation for jBPM integration</title>
+    <link href="http://localhost:4000/posts/preparation-for-integration/" rel="alternate" type="text/html" title="Preparation for jBPM integration" />
+    <published>2023-09-16T15:30:00+08:00</published>
+  
+    <updated>2023-09-16T15:30:00+08:00</updated>
+  
+    <id>http://localhost:4000/posts/preparation-for-integration/</id>
+    <content src="http://localhost:4000/posts/preparation-for-integration/" />
+    <author>
+      <name>danielthetam</name>
+    </author>
+
+  
+    
+    <category term="Projects" />
+    
+    <category term="jBPM-qBPM" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      How does integration work?
+As previously mentioned, jBPM allows for smooth integration with its accesible and well-secured REST API. It enables us to create our own powerful tools that act as an extension of jBPM, an example of such is the one I’ve created for demonstrative purposes, qBPM.
+
+Before we begin, we need to understand the structure of qBPM. qBPM uses a React frontend and a SpringBoot...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>Deploying our Business Process</title>
     <link href="http://localhost:4000/posts/deploying-our-process/" rel="alternate" type="text/html" title="Deploying our Business Process" />
     <published>2023-09-16T15:30:00+08:00</published>
   
-    <updated>2023-09-18T21:08:36+08:00</updated>
+    <updated>2023-09-18T23:51:24+08:00</updated>
   
     <id>http://localhost:4000/posts/deploying-our-process/</id>
     <content src="http://localhost:4000/posts/deploying-our-process/" />
@@ -90,128 +205,6 @@ Now,...
       
   High-level summary on how a process works
   There are two terms that we’d ought to familiarise ourselves with here. One being process definition, and the other process instance. Currently, we are creating a process definition, which can be thought of as a base blueprint for a process instance. There can be multiple process instances, which are created(or more properly-termed ‘instantiated’) ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Creating Data Objects and Groups</title>
-    <link href="http://localhost:4000/posts/creating-data-objects/" rel="alternate" type="text/html" title="Creating Data Objects and Groups" />
-    <published>2023-09-16T15:00:00+08:00</published>
-  
-    <updated>2023-09-16T15:00:00+08:00</updated>
-  
-    <id>http://localhost:4000/posts/creating-data-objects/</id>
-    <content src="http://localhost:4000/posts/creating-data-objects/" />
-    <author>
-      <name>danielthetam</name>
-    </author>
-
-  
-    
-    <category term="Projects" />
-    
-    <category term="jBPM-qBPM" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Creating Data Objects
-Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it.
-
-In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultima...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Getting Started with jBPM</title>
-    <link href="http://localhost:4000/posts/getting-started-with-jbpm/" rel="alternate" type="text/html" title="Getting Started with jBPM" />
-    <published>2023-09-16T15:00:00+08:00</published>
-  
-    <updated>2023-09-16T15:00:00+08:00</updated>
-  
-    <id>http://localhost:4000/posts/getting-started-with-jbpm/</id>
-    <content src="http://localhost:4000/posts/getting-started-with-jbpm/" />
-    <author>
-      <name>danielthetam</name>
-    </author>
-
-  
-    
-    <category term="Projects" />
-    
-    <category term="jBPM-qBPM" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Starting the jBPM Server
-Once we have installed jBPM and unzipped its contents, we can begin by navigating to the ‘bin’ folder and running ‘standalone.bat’. This will get the jBPM server up and running. Once the server is up, navigate to Business Central(“https://localhost:8080/business-central/”) where we’ll be met by the Business Central login page.
-
-Getting started with Business Central
-jBPM...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Introduction</title>
-    <link href="http://localhost:4000/posts/introduction/" rel="alternate" type="text/html" title="Introduction" />
-    <published>2023-09-16T15:00:00+08:00</published>
-  
-    <updated>2023-09-16T17:07:15+08:00</updated>
-  
-    <id>http://localhost:4000/posts/introduction/</id>
-    <content src="http://localhost:4000/posts/introduction/" />
-    <author>
-      <name>danielthetam</name>
-    </author>
-
-  
-    
-    <category term="Projects" />
-    
-    <category term="jBPM-qBPM" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      
-  Disclaimer
-  I am by no means a professional on the topics mentioned nor the technologies, rather, this documentation is a blog on my experience as an amateur
-and hopefully serves as a light in the dark for beginners or any curious developers looking to perform a little project with business automation.
-
-
-What is jBPM?
-jBPM is a business automation tool for automating business processes with...
     </summary>
   
 

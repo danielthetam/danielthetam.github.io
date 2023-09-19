@@ -90,7 +90,9 @@ Actors:
 * `#{manager}`
     * This statement gets the value of our `manager` process variable and so assigns the task to the manager as specified by our HR team.
 * `wbadmin`
-    * I forgot why
+    * We do this because our application that uses jBPM's REST API requires authentication to complete a user's reserved task(task that it reserved for that specific user, just like our manager and the approval task), but for security reasons and the way we hash account passwords, we cannot access the manager's credentials.
+    * Therefore, we create a workaround by establishing a system account for all authentication, and also assign reserved tasks to them in order for the task to be completed through authentication from our system account. 
+    * We shall establish `wbadmin` as our system account.
 * Assignments:
     * Data Inputs And Assignments:
         * Name: `employee`; Data Type: `com.myspace.wfhrequest_portal.Employee`; Source: `employee`
