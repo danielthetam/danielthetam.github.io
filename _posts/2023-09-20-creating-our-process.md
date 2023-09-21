@@ -13,7 +13,7 @@ Now, we shall design the business process and define its flow. Because this is a
 
 Our goal now is to turn the above thoughts into action. Let's start off by adding a new business process asset into the project and naming it 'request-portal'. Below is a reference image and a spoiler for what our business process will look like at the end of the day.
 
-![business-process-reference](/assets/lib/business-process-reference.PNG)
+![business-process-reference](/assets/business-process-reference.PNG)
 
 ## Submission Stage
 From the above scenario reference, we know that our process involves these three stages: submission, processing and a final approval. To represent submission(i.e the start of the process), we will drag a start node(the plain green circle) into our editor space.
