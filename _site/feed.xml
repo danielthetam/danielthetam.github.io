@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>danielthetam.github.io</title>
   <subtitle>This blog acts as a host for any documentation for my projects, however, if you are interested, my personal blog  can be found at danieltam.com</subtitle>
-  <updated>2023-09-21T22:27:11+08:00</updated>
+  <updated>2023-09-21T22:34:00+08:00</updated>
   <author>
     <name>danielthetam</name>
     <uri>http://localhost:4000/</uri>
@@ -63,7 +63,7 @@ In the case that any other errors come up, do attempt to search it up as setup w
     <link href="http://localhost:4000/posts/integrating-with-jbpm/" rel="alternate" type="text/html" title="Integrating with jBPM" />
     <published>2023-09-16T15:30:00+08:00</published>
   
-    <updated>2023-09-16T15:30:00+08:00</updated>
+    <updated>2023-09-21T22:29:14+08:00</updated>
   
     <id>http://localhost:4000/posts/integrating-with-jbpm/</id>
     <content src="http://localhost:4000/posts/integrating-with-jbpm/" />
@@ -180,7 +180,7 @@ Now,...
     <link href="http://localhost:4000/posts/creating-our-process/" rel="alternate" type="text/html" title="Creating Our Business Process" />
     <published>2023-09-16T15:30:00+08:00</published>
   
-    <updated>2023-09-19T23:41:26+08:00</updated>
+    <updated>2023-09-21T22:29:14+08:00</updated>
   
     <id>http://localhost:4000/posts/creating-our-process/</id>
     <content src="http://localhost:4000/posts/creating-our-process/" />

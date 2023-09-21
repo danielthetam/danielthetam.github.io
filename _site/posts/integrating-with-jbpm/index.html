@@ -51,7 +51,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Integrating with jBPM" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-16T15:30:00+08:00","datePublished":"2023-09-16T15:30:00+08:00","description":"Setting up our Postgres database Open your Postgres setup, and just step through everything while following the default configurations, but ensure that you note down your password and your host, and also make sure that Command Line Tools is ticked as an installation configuration. After installation, search for psql in your search bar and open the application. Once you open it, you’ll see something like this: Server [localhost]:, we can just hit enter until we get to Password for user xxx: where you have to type the password you noted down during the setup. Once you have logged in, we can go ahead and create a new database by typing CREATE DATABASE qbpm;. Ensure you put a semi-colon after every statement because it marks the end of a statement in SQL(Structured Query Language). Configuring SpringBoot’s application properties Now, we shall set up qBPM. Go ahead and download or clone this GitHub repository. Once you have downloaded it, navigate to API\\src\\main\\resources\\application.properties and edit it with any simple text editor. If you have prior experience in Postgres and did not follow the steps above, change the value of spring.datasource.url to this jdbc:postgresql://host:port/database where you change the values host, port, database with the appropriate details. If you have been following the default values and the steps above, you can leave it as is. Next, change the value of spring.datasource.username to your user account(by default it is postgres), and change the value of sprng.datasource.password to the password you noted down. Running qBPM Running the SpringBoot API Now, open Visual Studio Code, head to the top menu bar, click on File &gt; Open Folder and navigate to the API folder and open it. Then, click on the Extension button(4x4 cube with a detached top-right cube) on the left menu bar, and search for the extension Spring Extension Pack. This will download all the required extensions to run our application. After installation, navigate to the top menu bar again and click on Terminal &gt; New Terminal. Then, in your terminal, enter &amp; &#39;C:\\Program Files\\Java\\jdk-17\\bin\\java.exe&#39; &#39;-cp&#39; &#39;C:\\Users\\yourusername\\AppData\\Local\\Temp\\cp_2e9afgjm2aisca0ev8fztta4w.jar&#39; &#39;com.daniel.qbpm.qBPMApplication&#39;. Ensure that you change yourusername to your username. Running the React API Now, go to File &gt; New Window. In the new window, repeat the same step to open a folder but open the react-view folder instead. Then, open a new terminal, enter the command npm install, and npm(node package manager) will install all the required packages for you. After it is done, enter the command npm start to start the React application. Then, open https://localhost:3000 to access the app.","headline":"Integrating with jBPM","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/integrating-with-jbpm/"},"url":"http://localhost:4000/posts/integrating-with-jbpm/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-21T22:29:14+08:00","datePublished":"2023-09-16T15:30:00+08:00","description":"Setting up our Postgres database Open your Postgres setup, and just step through everything while following the default configurations, but ensure that you note down your password and your host, and also make sure that Command Line Tools is ticked as an installation configuration. After installation, search for psql in your search bar and open the application. Once you open it, you’ll see something like this: Server [localhost]:, we can just hit enter until we get to Password for user xxx: where you have to type the password you noted down during the setup. Once you have logged in, we can go ahead and create a new database by typing CREATE DATABASE qbpm;. Ensure you put a semi-colon after every statement because it marks the end of a statement in SQL(Structured Query Language). Configuring SpringBoot’s application properties Now, we shall set up qBPM. Go ahead and download or clone this GitHub repository. Once you have downloaded it, navigate to API\\src\\main\\resources\\application.properties and edit it with any simple text editor. If you have prior experience in Postgres and did not follow the steps above, change the value of spring.datasource.url to this jdbc:postgresql://host:port/database where you change the values host, port, database with the appropriate details. If you have been following the default values and the steps above, you can leave it as is. Next, change the value of spring.datasource.username to your user account(by default it is postgres), and change the value of sprng.datasource.password to the password you noted down. Running qBPM Running the SpringBoot API Now, open Visual Studio Code, head to the top menu bar, click on File &gt; Open Folder and navigate to the API folder and open it. Then, click on the Extension button(4x4 cube with a detached top-right cube) on the left menu bar, and search for the extension Spring Extension Pack. This will download all the required extensions to run our application. After installation, navigate to the top menu bar again and click on Terminal &gt; New Terminal. Then, in your terminal, enter &amp; &#39;C:\\Program Files\\Java\\jdk-17\\bin\\java.exe&#39; &#39;-cp&#39; &#39;C:\\Users\\yourusername\\AppData\\Local\\Temp\\cp_2e9afgjm2aisca0ev8fztta4w.jar&#39; &#39;com.daniel.qbpm.qBPMApplication&#39;. Ensure that you change yourusername to your username. Running the React API Now, go to File &gt; New Window. In the new window, repeat the same step to open a folder but open the react-view folder instead. Then, open a new terminal, enter the command npm install, and npm(node package manager) will install all the required packages for you. After it is done, enter the command npm start to start the React application. Then, open https://localhost:3000 to access the app.","headline":"Integrating with jBPM","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/integrating-with-jbpm/"},"url":"http://localhost:4000/posts/integrating-with-jbpm/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -695,6 +695,29 @@
 
     <!-- lastmod date -->
     
+      <span>
+        Updated
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1695306554"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Sep 21, 2023
+</time>
+
+      </span>
+    
 
     
 
@@ -909,14 +932,21 @@ PROOF-READ AND FINAL TOUCHES
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/introduction/">Introduction</a>
+          <a href="/posts/creating-our-process/">Creating Our Business Process</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/creating-our-process/">Creating Our Business Process</a>
+          <a href="/posts/integrating-with-jbpm/">Integrating with jBPM</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/posts/introduction/">Introduction</a>
         </li>
       
         
