@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/posts/introduction/</loc>
-<lastmod>2023-09-16T17:07:15+08:00</lastmod>
+<lastmod>2023-09-19T23:41:26+08:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/posts/getting-started-with-jbpm/</loc>
@@ -14,11 +14,11 @@
 </url>
 <url>
 <loc>http://localhost:4000/posts/creating-our-process/</loc>
-<lastmod>2023-09-18T13:35:45+08:00</lastmod>
+<lastmod>2023-09-19T23:41:26+08:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/posts/deploying-our-process/</loc>
-<lastmod>2023-09-18T23:51:24+08:00</lastmod>
+<lastmod>2023-09-19T23:41:26+08:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/posts/preparation-for-integration/</loc>
@@ -34,19 +34,19 @@
 </url>
 <url>
 <loc>http://localhost:4000/categories/</loc>
-<lastmod>2023-09-19T23:39:05+08:00</lastmod>
+<lastmod>2023-09-21T22:27:11+08:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/tags/</loc>
-<lastmod>2023-09-19T23:39:05+08:00</lastmod>
+<lastmod>2023-09-21T22:27:11+08:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/archives/</loc>
-<lastmod>2023-09-19T23:39:05+08:00</lastmod>
+<lastmod>2023-09-21T22:27:11+08:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/about/</loc>
-<lastmod>2023-09-19T23:39:05+08:00</lastmod>
+<lastmod>2023-09-21T22:27:11+08:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>

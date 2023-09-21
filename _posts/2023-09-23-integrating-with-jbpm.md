@@ -24,3 +24,10 @@ Now, open Visual Studio Code, head to the top menu bar, click on File > Open Fol
 
 ### Running the React API
 Now, go to File > New Window. In the new window, repeat the same step to open a folder but open the `react-view` folder instead. Then, open a new terminal, enter the command `npm install`, and npm(node package manager) will install all the required packages for you. After it is done, enter the command `npm start` to start the React application. Then, open `https://localhost:3000` to access the app. 
+
+<!-- ---
+TODO
+ADD IMAGES
+ADD VIDEO WALKTHROUGH
+PROOF-READ AND FINAL TOUCHES
+--- -->
