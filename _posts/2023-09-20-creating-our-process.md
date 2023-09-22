@@ -3,33 +3,33 @@ title: Creating Our Business Process
 categories: [Projects,  jBPM-qBPM]
 date: 2023-09-16 15:30:00 +0800
 ---
-> ## *High-level summary on how a process works*
-> There are two terms that we'd ought to familiarise ourselves with here. One being **process definition**, and the other **process instance**. Currently, we are creating a process definition, which can be thought of as a base blueprint for a process instance. There can be multiple process instances, which are created(or more properly-termed 'instantiated') when the employee wants to submit a request. Each instance is different from each other and may end with varying results. This is primarily reliant on differences in process variables that are defined by user input(like our `employee` and `request` variable that needs to be filled up by the requester) as well as outputs from functions executed along the flow.
+> ## *A high-level summary on how a process works*
+> There are two terms that we'd ought to familiarise ourselves with here. One being **process definition**, and the other **process instance**. Currently, we are creating a process definition, which can be thought of as a base blueprint for a process instance. There can be multiple process instances, which are created(or more properly-termed 'instantiated') when the employee wants to submit a request. Each instance is different from the other and may end with varying results. This is primarily reliant on differences in process variables that are defined by user input(like our `employee` and `request` variable that needs to be filled up by the requester) as well as outputs from functions executed along the flow.
 
 Now, we shall design the business process and define its flow. Because this is a demo application, we'll keep things simple instead of creating overwhelmingly complex processes. 
 
 > ## *Scenario Reference*
-> In our portal, we'll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the request made by the first actor.
+> In our portal, we'll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object in and of itself. Then, we also have the request object, which should contain information about the request made by the first actor.
 
-Our goal now is to turn the above thoughts into action. Let's start off by adding a new business process asset into the project and naming it 'request-portal'. Below is a reference image and a spoiler for what our business process will look like at the end of the day.
+Our goal now is to turn the above thoughts into action. Let's start off by adding a new business process asset to the project and naming it 'request-portal'. Below is a reference image and a spoiler for what our business process will look like at the end of the day.
 
 ![business-process-reference](/assets/business-process-reference.PNG)
 
 ## Submission Stage
-From the above scenario reference, we know that our process involves these three stages: submission, processing and a final approval. To represent submission(i.e the start of the process), we will drag a start node(the plain green circle) into our editor space.
+From the above scenario reference, we know that our process involves these three stages: submission, processing, and a final approval. To represent submission(i.e the start of the process), we will drag a start node(the plain green circle) into our editor space.
 
 ## Processing Stages
 Now, in the processing stage, we can break it down into two sub-stages: manual filtering by Processing Officers, and the assignment of the appropriate department manager by a Human Resources team. 
 
 ### Creating our user task nodes
-Since these are tasks assigned to human users, let's click on the Activities button(can be identified by a plain rounded rectangle on the menu of nodes on the left) and drag in a User node. Then we connect the start node to it. Nodes can be connected together by clicking on the preceding node, selecting the solid arrow icon and dragging it towards the following node. Click on the User node and edit its name to "Manual Filtering" in the Properties window on the right. 
+Since these are tasks assigned to human users, let's click on the Activities button(which can be identified by a plain rounded rectangle on the menu of nodes on the left) and drag in a User node. Then we connect the start node to it. Nodes can be connected together by clicking on the preceding node, selecting the solid arrow icon, and dragging it towards the following node. Click on the User node and edit its name to "Manual Filtering" in the Properties window on the right. 
 
-If there doesn't appear to be any window, click on the pencil-paper icon on the upper right corner to expand it. 
+If there doesn't appear to be any window, click on the pencil-paper icon in the upper-right corner to expand it. 
 
 Then, we drag in another User node, and we then name it "Department Manager Assignment". 
 
 ### Implementing conditions with a BPMN gateway
-Before connecting the two, we need a BPMN(Business Process Model and Notation) gateway, which can be thought of as a logic gate which helps us implement conditional statements in our process. This gateway is needed to split our results into two cases based on the output of Manual Filtering sub-stage. One being an approval from Processing Officers where it will lead to the next sub-stage(assignment of department manager), and another where it is rejected, and leads to an early-ending and a notice email of rejection to the employee. A list of gateways and what they generally perform can be found [here](https://www.lucidchart.com/pages/bpmn-symbols-explained#section_4).
+Before connecting the two, we need a BPMN(Business Process Model and Notation) gateway, which can be thought of as a logic gate that helps us implement conditional statements in our process. This gateway is needed to split our results into two cases based on the output of the Manual Filtering sub-stage. One being an approval from Processing Officers where it will lead to the next sub-stage(assignment of department manager), and another where it is rejected, and leads to an early-ending and a notice email of rejection to the employee. A list of gateways and what they generally perform can be found [here](https://www.lucidchart.com/pages/bpmn-symbols-explained#section_4).
 
 Let's click on the Gateways button(orange rhombus) and drag an "Exclusive" gateway in between our two task nodes. Expand the properties window and name it "Processing Officer Decision", and connect the Manual Filtering node to our gateway. The gateway should then branch out into two paths, but for now, we'll just connect it to our Department Manager Assignment node. 
 
@@ -60,7 +60,7 @@ Now, click on our Manual Filtering node, and expand Implementation/Execution. Fi
     * Data Inputs And Assignments(*These are the input parameters given to our Processing Officers, who are part of the ManualFilters group*):
         * Name: `employee`; Data Type: `com.myspace.wfhrequest_portal.Employee`; Source: `employee`
         * Name: `request`; Data Type: `com.myspace.wfhrequest_portal.Request`; Source: `request`
-    * Data Outputs And Assignments(These is the output decision that will be manually filled by our Processing Officer)
+    * Data Outputs And Assignments(This is the output decision that will be manually filled by our Processing Officer)
         * Name: `hasBeenValidated`; Data Type: `Boolean`; Source: `hasBeenValidated`
 
 #### Configuring our Department Manager Assigment node

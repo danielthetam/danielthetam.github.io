@@ -7,7 +7,7 @@ date: 2023-09-16 15:00:00 +0800
 ## Creating Data Objects
 Now, we will begin adding our assets. First, let's clarify what objects we'd need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it. 
 
-In our portal, we'll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object of itself. Then, we also have the request object, which should contain information about the request made by the first actor.
+In our portal, we'll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object in and of itself. Then, we also have the request object, which should contain information about the request made by the first actor.
 
 ### Employee Data Object
 Now, let's add a Data Object(which are underlyingly Java object classes with fields you can define) named Employee and package it under "com.myspace.wfhrequest_portal". Let's add some fields which define the attributes of each employee.
@@ -45,4 +45,3 @@ We'll add another Data Object named Request, and package it under "com.myspace.w
 In jBPM, we have what we call groups. Groups enable us to organise users into their respective teams and/or departments. In our scenario, our groups of actors who process the request can be broken down into two groups. For now, that's all we have to know. 
 
 Let's create the groups by clicking on the cog icon on the top-right corner and clicking on "Groups". Click "New Group" and name it "HR" for Human Resources. Then, we will be prompted to assign users to that group. We can just assign ourselves to the group. Next, repeat the same step but name the group "ManualFilters".
-
