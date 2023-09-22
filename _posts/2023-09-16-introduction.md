@@ -33,6 +33,10 @@ We will be using jBPM to create a work from home request portal to automate the 
 > #### Note
 > Every process mentioned in this documentation is based on my experience in Windows 10, so do keep in mind that results may vary from operating system to operating system
 
+## Video Showcase of qBPM
+
+https://youtu.be/SCesex2yH6Q
+
 [//]: # ()
    [jBPM]: <https://jbpm.org>
    [qBPM]: <https://github.com/danielthetam/qBPM>
