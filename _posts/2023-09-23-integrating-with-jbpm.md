@@ -16,7 +16,7 @@ Now, we shall set up qBPM. Go ahead and download or clone this [GitHub repositor
 
 **If you have prior experience in Postgres and did not follow the steps above**, change the value of `spring.datasource.url` to this `jdbc:postgresql://host:port/database` where you change the values `host`, `port`, `database` with the appropriate details. If you have been following the default values and the steps above, you can leave it as is.
 
-Next, change the value of `spring.datasource.username` to your user account(by default it is `postgres`), and change the value of `sprng.datasource.password` to the password you noted down.
+Next, change the value of `spring.datasource.username` to your user account(by default it is `postgres`), and change the value of `spring.datasource.password` to the password you noted down.
 
 ## Running qBPM
 ### Running the SpringBoot API

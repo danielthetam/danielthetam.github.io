@@ -11,7 +11,7 @@ Now, we shall design the business process and define its flow. Because this is a
 > ## *Scenario Reference*
 > In our portal, we'll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultimately, all of these actors are employees, so that can be declared as an object in and of itself. Then, we also have the request object, which should contain information about the request made by the first actor.
 
-Our goal now is to turn the above thoughts into action. Let's start off by adding a new business process asset to the project and naming it 'request-portal'. Below is a reference image and a spoiler for what our business process will look like at the end of the day.
+Our goal now is to turn the above thoughts into action. Let's start off by adding a new business process asset to the project and naming it 'request-portal'. Below is a reference image and a teaser for what our business process will look like at the end of the day.
 
 ![business-process-reference](/assets/business-process-reference.PNG)
 
@@ -29,7 +29,7 @@ If there doesn't appear to be any window, click on the pencil-paper icon in the 
 Then, we drag in another User node, and we then name it "Department Manager Assignment". 
 
 ### Implementing conditions with a BPMN gateway
-Before connecting the two, we need a BPMN(Business Process Model and Notation) gateway, which can be thought of as a logic gate that helps us implement conditional statements in our process. This gateway is needed to split our results into two cases based on the output of the Manual Filtering sub-stage. One being an approval from Processing Officers where it will lead to the next sub-stage(assignment of department manager), and another where it is rejected, and leads to an early-ending and a notice email of rejection to the employee. A list of gateways and what they generally perform can be found [here](https://www.lucidchart.com/pages/bpmn-symbols-explained#section_4).
+Before connecting the two, we need a BPMN(Business Process Model and Notation) gateway, which can be thought of as a logic gate that helps us implement control flow in our process. This gateway is needed to split our results into two cases based on the output of the Manual Filtering sub-stage. One being an approval from Processing Officers where it will lead to the next sub-stage(assignment of department manager), and another where it is rejected, and leads to an early-ending and a notice email of rejection to the employee. A list of gateways and what they generally perform can be found [here](https://www.lucidchart.com/pages/bpmn-symbols-explained#section_4).
 
 Let's click on the Gateways button(orange rhombus) and drag an "Exclusive" gateway in between our two task nodes. Expand the properties window and name it "Processing Officer Decision", and connect the Manual Filtering node to our gateway. The gateway should then branch out into two paths, but for now, we'll just connect it to our Department Manager Assignment node. 
 
@@ -39,7 +39,7 @@ Now, we need to define a condition for when the gateway should allow the flow to
 In order to edit process variables, click on the upper right pencil-paper icon to edit the properties of our process.
 
 > #### *Note: If you can't see any process properties*
-> Ensure that you haven't selected any nodes, otherwise it'd display the properties of that node instead of the process properties. To de-select a node, just click away from it.
+> Ensure that you haven't selected any nodes, otherwise it'd display the properties of that node instead of the process properties. To de-select a node, just click on any empty space. 
 
 Then, scroll down and click on Process Data to expand the list, and there we can edit our process variables. Process variables are variables that we need to keep track of globally throughout the execution of the process. 
 
@@ -114,8 +114,11 @@ If it is true, it will lead to our custom email task where we email the employee
 
 If it is false, it will let them know that their request has been rejected. 
 
-These tasks will be known as `Approval Notice` and `Rejection Notice`. Now, click on the `Custom Tasks`(icon of cogs) button to add our new custom email task to the editorial space. Name is `Approval Notice`. Then, connect the new exclusive gateway to our new custom task, click on the arrow, and add the following expression: `hasBeenApproved = true and hasBeenValidated = true`. This path will only open when(i.e the approval email will only be sent) when both Processing Officers and Department Manager approve of the request. Finally, add an `End` node and connect the custom task to it to signify the end of the process. 
+These tasks will be known as `Approval Notice` and `Rejection Notice`. Now, click on the `Custom Tasks`(icon of cogs) button to add our new custom email task to the editorial space. Name it `Approval Notice`. Then, connect the new exclusive gateway to our new custom task, click on the arrow, and add the following expression: `hasBeenApproved = true and hasBeenValidated = true`. Now the approval email will only be sent when both Processing Officers and Department Manager approve of the request. Finally, add an `End` node and connect the custom task to it to signify the end of the process. 
 
-For now, we know that our process can be lead to Rejection Notice from two paths. First from the rejection of Processing Officers, and second from the approval of Processing Officers, but the rejection of the Department Manager. To combine these two paths, we shall create another exclusive gateway just to organise these two paths into one that leads to the same result. Now, place a new exclusive gateway, and connect our Department Manager Decision gateway to it, click on the arrow, and add the condition: `hasBeenApproved = false or hasBeenValidated = false`. Lastly, also connect our "Processing Officer Decision" gateway to the same gateway, click on the arrow, and add the condition `hasBeenValidated = false`.
+For now, we know that our process can be led to Rejection Notice from two paths. 
+* From the rejection of Processing Officers at the start
+* The approval of Processing Officers at the start but the rejection of the Department Manager in the end.
+To combine these two paths, we shall create another exclusive gateway just to organise these two paths into one that leads to the same result. Now, place a new exclusive gateway, and connect our Department Manager Decision gateway to it. Click on the arrow, and add the condition: `hasBeenApproved = false or hasBeenValidated = false`. Lastly, also connect our "Processing Officer Decision" gateway to the same gateway. Click on the arrow, and add the condition `hasBeenValidated = false`.
 
 Add a new custom email task and name it `Rejection Notice`. Finally, connect our new gateway to this node and connect the email task to another end node. At last, our work for the business process is finished and we can save it. 

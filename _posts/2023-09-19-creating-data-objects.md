@@ -42,6 +42,6 @@ We'll add another Data Object named Request, and package it under "com.myspace.w
 `numOfDays` represents the number of days the employee will be working from home, starting on reqDt(the requested date). `reason` represents the reason for the request. Once again we save the object.
 
 ## Creating our groups
-In jBPM, we have what we call groups. Groups enable us to organise users into their respective teams and/or departments. In our scenario, our groups of actors who process the request can be broken down into two groups. For now, that's all we have to know. 
+In jBPM, we have what we call groups. Groups enable us to organise users into their respective teams and/or departments. In our scenario, the groups who process the request can be broken down into two separate groups of actors. For now, that's all we have to know. 
 
 Let's create the groups by clicking on the cog icon on the top-right corner and clicking on "Groups". Click "New Group" and name it "HR" for Human Resources. Then, we will be prompted to assign users to that group. We can just assign ourselves to the group. Next, repeat the same step but name the group "ManualFilters".
