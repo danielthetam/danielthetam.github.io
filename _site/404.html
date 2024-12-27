@@ -13,12 +13,8 @@
 
 
 
-
-
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="en" 
-  
->
+<html lang="en" >
   <!-- The Head -->
 
 <head>
@@ -99,13 +95,17 @@
   
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
 
   <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
 
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
   
 
   
@@ -379,8 +379,8 @@
 
       
         <a
-          href="https://twitter.com/"
-          aria-label="twitter"
+          href="https://linkedin.com/in/danielthetam/"
+          aria-label="linkedin"
           
 
           
@@ -394,43 +394,7 @@
             rel="noopener noreferrer"
           
         >
-          <i class="fa-brands fa-x-twitter"></i>
-        </a>
-      
-    
-      
-
-      
-        <a
-          href="javascript:location.href = 'mailto:' + ['example','domain.com'].join('@')"
-          aria-label="email"
-          
-
-          
-
-          
-
-          
-        >
-          <i class="fas fa-envelope"></i>
-        </a>
-      
-    
-      
-
-      
-        <a
-          href="/feed.xml"
-          aria-label="rss"
-          
-
-          
-
-          
-
-          
-        >
-          <i class="fas fa-rss"></i>
+          <i class="fab fa-linkedin"></i>
         </a>
       
     
@@ -441,7 +405,7 @@
 
 
     <div id="main-wrapper" class="d-flex justify-content-center">
-      <div class="container px-xxl-5">
+      <div class="container d-flex flex-column px-xxl-5">
         <!-- The Top Bar -->
 
 <header id="topbar-wrapper" aria-label="Top Bar">
@@ -502,24 +466,10 @@
 </header>
 
 
-        <div class="row">
-          <main
-            aria-label="Main Content"
-            class="col-12 col-lg-11 col-xl-9 px-md-4 pb-5"
-          >
+        <div class="row flex-grow-1">
+          <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
-
-<article class="px-1">
-  
-    
-    
-    <h1 class="dynamic-title">
-      404: Page not found
-    </h1>
-    <div class="content">
-      
-  
-    <!-- Refactor the HTML structure -->
+              <!-- Refactor the HTML structure -->
 
 
 
@@ -541,7 +491,9 @@
 <!-- Change the icon of checkbox -->
 
 
-<!-- images -->
+
+<!-- Handle images -->
+
 
 
 
@@ -584,19 +536,30 @@
 
 
 
-<p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.</p>
-
-
+<article class="px-1">
   
+    
+    
+    <h1 class="dynamic-title">
+      404: Page not found
+    </h1>
+    <div class="content">
+      
+
+
+
+<p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.</p>
 
     </div>
   
 </article>
 
+
+            
           </main>
 
           <!-- panel -->
-          <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
+          <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 mb-5 text-muted">
             <div class="access">
               <!-- Get the last 5 posts from lastmod list. -->
 
@@ -621,21 +584,21 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/introduction/">Introduction</a>
+          <a href="/posts/integrating-with-jbpm/">Integrating with jBPM</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/getting-started-with-jbpm/">Getting Started with jBPM</a>
+          <a href="/posts/preparation-for-integration/">Preparation for jBPM integration</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/creating-data-objects/">Creating Data Objects and Groups</a>
+          <a href="/posts/deploying-our-process/">Deploying our Business Process</a>
         </li>
       
         
@@ -649,7 +612,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/integrating-with-jbpm/">Integrating with jBPM</a>
+          <a href="/posts/creating-data-objects/">Creating Data Objects and Groups</a>
         </li>
       
     </ul>
@@ -698,7 +661,7 @@
 >
   <p>
     ©
-    <time>2023</time>
+    <time>2024</time>
     <a href="https://github.com/danielthetam">danielthetam</a>.
     
       <span
@@ -709,7 +672,7 @@
     
   </p>
 
-  <p>Using the <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> theme <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a>
+  <p>Using the <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> theme for <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>.
   </p>
 </footer>
 
@@ -860,7 +823,7 @@
 
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/lazysizes@5.3.2/lazysizes.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
 
 
 

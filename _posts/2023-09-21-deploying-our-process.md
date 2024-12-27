@@ -1,7 +1,7 @@
 ---
 title: Deploying our Business Process
 categories: [Projects,  jBPM-qBPM]
-date: 2023-09-16 15:30:00 +0800
+date: 2023-09-16 14:56:00 +0800
 ---
 ## Deploying our project
 Before we deploy our project, we need to generate the forms required for our process. To do this, head into our `request-portal` process, click on the form button(form icon to the left of the Download button), and click `Generate all forms`. This will generate all dedicated forms for our business process. Once generated, we should see some new form assets in our project. 

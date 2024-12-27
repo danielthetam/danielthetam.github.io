@@ -13,12 +13,8 @@
 
 
 
-
-
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="en" 
-  
->
+<html lang="en" >
   <!-- The Head -->
 
 <head>
@@ -51,7 +47,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Introduction" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-22T15:53:23+08:00","datePublished":"2023-09-16T15:00:00+08:00","description":"Disclaimer I am by no means a professional on the topics mentioned nor the technologies; rather, this documentation is a blog on my experience as an amateur and hopefully serves as a light in the dark for beginners or any curious developers looking to perform a little project with business automation.","headline":"Introduction","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/introduction/"},"url":"http://localhost:4000/posts/introduction/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-21T11:54:08+08:00","datePublished":"2023-09-16T15:00:00+08:00","description":"Disclaimer I am by no means a professional on the topics mentioned nor the technologies; rather, this documentation is a blog on my experience as an amateur and hopefully serves as a light in the dark for beginners or any curious developers looking to perform a little project with business automation.","headline":"Introduction","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/introduction/"},"url":"http://localhost:4000/posts/introduction/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -100,7 +96,7 @@
   
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
@@ -108,7 +104,11 @@
   <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
 
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.1/dist/tocbot.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.3/dist/tocbot.min.css">
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
   
 
   
@@ -382,8 +382,8 @@
 
       
         <a
-          href="https://twitter.com/"
-          aria-label="twitter"
+          href="https://linkedin.com/in/danielthetam/"
+          aria-label="linkedin"
           
 
           
@@ -397,43 +397,7 @@
             rel="noopener noreferrer"
           
         >
-          <i class="fa-brands fa-x-twitter"></i>
-        </a>
-      
-    
-      
-
-      
-        <a
-          href="javascript:location.href = 'mailto:' + ['example','domain.com'].join('@')"
-          aria-label="email"
-          
-
-          
-
-          
-
-          
-        >
-          <i class="fas fa-envelope"></i>
-        </a>
-      
-    
-      
-
-      
-        <a
-          href="/feed.xml"
-          aria-label="rss"
-          
-
-          
-
-          
-
-          
-        >
-          <i class="fas fa-rss"></i>
+          <i class="fab fa-linkedin"></i>
         </a>
       
     
@@ -444,7 +408,7 @@
 
 
     <div id="main-wrapper" class="d-flex justify-content-center">
-      <div class="container px-xxl-5">
+      <div class="container d-flex flex-column px-xxl-5">
         <!-- The Top Bar -->
 
 <header id="topbar-wrapper" aria-label="Top Bar">
@@ -507,18 +471,10 @@
 </header>
 
 
-        <div class="row">
-          <main
-            aria-label="Main Content"
-            class="col-12 col-lg-11 col-xl-9 px-md-4"
-          >
+        <div class="row flex-grow-1">
+          <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
-
-<article class="px-1">
-  
-    
-  
-    <!-- Refactor the HTML structure -->
+              <!-- Refactor the HTML structure -->
 
 
 
@@ -540,7 +496,9 @@
 <!-- Change the icon of checkbox -->
 
 
-<!-- images -->
+
+<!-- Handle images -->
+
 
 
 
@@ -576,7 +534,6 @@
       
 
       
-
     
       
 
@@ -588,7 +545,6 @@
       
 
       
-
     
       
 
@@ -600,7 +556,6 @@
       
 
       
-
     
       
 
@@ -612,7 +567,6 @@
       
 
       
-
     
       
 
@@ -624,7 +578,6 @@
       
 
       
-
     
       
 
@@ -636,11 +589,9 @@
       
 
       
-
     
 
     
-
   
 
   
@@ -669,7 +620,6 @@
       
 
       
-
     
       
 
@@ -681,11 +631,9 @@
       
 
       
-
     
 
     
-
   
 
   
@@ -701,14 +649,15 @@
 
 
 
-<header>
-  <h1 data-toc-skip>Introduction</h1>
+<article class="px-1">
+  <header>
+    <h1 data-toc-skip>Introduction</h1>
 
-  <div class="post-meta text-muted">
-    <!-- published date -->
-    <span>
-      Posted
-      <!--
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
+        <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -727,13 +676,13 @@
   Sep 16, 2023
 </time>
 
-    </span>
+      </span>
 
-    <!-- lastmod date -->
-    
-      <span>
-        Updated
-        <!--
+      <!-- lastmod date -->
+      
+        <span>
+          Updated
+          <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -743,36 +692,36 @@
 
 <time
   
-  data-ts="1695369203"
+  data-ts="1700538848"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Sep 22, 2023
+  Nov 21, 2023
 </time>
 
-      </span>
-    
+        </span>
+      
 
-    
+      
 
-    <div class="d-flex justify-content-between">
-      <!-- author(s) -->
-      <span>
-        
-
-        By
-
-        <em>
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
           
-            <a href="https://github.com/danielthetam">danielthetam</a>
-          
-        </em>
-      </span>
 
-      <!-- read time -->
-      <!-- Calculate the post's reading time, and display the word count in tooltip -->
+          By
+
+          <em>
+            
+              <a href="https://github.com/danielthetam">danielthetam</a>
+            
+          </em>
+        </span>
+
+        <!-- read time -->
+        <!-- Calculate the post's reading time, and display the word count in tooltip -->
 
 
 
@@ -796,14 +745,14 @@
 >
   <em>2 min</em> read</span>
 
+      </div>
+      <!-- .d-flex -->
     </div>
-    <!-- .d-flex -->
-  </div>
-  <!-- .post-meta -->
-</header>
+    <!-- .post-meta -->
+  </header>
 
-<div class="content">
-  <blockquote>
+  <div class="content">
+    <blockquote>
   <h4 id="disclaimer"><span class="me-2">Disclaimer</span><a href="#disclaimer" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
   <p>I am by no means a professional on the topics mentioned nor the technologies; rather, this documentation is a blog on my experience as an amateur
 and hopefully serves as a light in the dark for beginners or any curious developers looking to perform a little project with business automation.</p>
@@ -853,87 +802,76 @@ and hopefully serves as a light in the dark for beginners or any curious develop
 <p><a href="https://youtu.be/SCesex2yH6Q">qBPM Showcase</a></p>
 
 
-</div>
+  </div>
 
-<div class="post-tail-wrapper text-muted">
-  <!-- categories -->
-  
-    <div class="post-meta mb-3">
-      <i class="far fa-folder-open fa-fw me-1"></i>
-      
-        <a href="/categories/projects/">Projects</a>,
-        <a href="/categories/jbpm-qbpm/">jBPM-qBPM</a>
-    </div>
-  
-
-  <!-- tags -->
-  
-
-  <div
-    class="
-      post-tail-bottom
-      d-flex justify-content-between align-items-center mt-5 pb-2
-    "
-  >
-    <div class="license-wrapper">
-      
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
+    
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
         
+          <a href="/categories/projects/">Projects</a>,
+          <a href="/categories/jbpm-qbpm/">jBPM-qBPM</a>
+      </div>
+    
 
-        This post is licensed under 
+    <!-- tags -->
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
+        
+          
+
+          This post is licensed under 
         <a href="https://creativecommons.org/licenses/by/4.0/">
           CC BY 4.0
         </a>
          by the author.
-      
-    </div>
+        
+      </div>
 
-    <!-- Post sharing snippet -->
+      <!-- Post sharing snippet -->
 
 <div class="share-wrapper d-flex align-items-center">
-  <span class="share-label text-muted me-1">Share</span>
+  <span class="share-label text-muted">Share</span>
   <span class="share-icons">
     
     
     
 
     
+
       
-      <a
-        href="https://twitter.com/intent/tweet?text=Introduction%20-%20danielthetam.github.io&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fintroduction%2F"
-        data-bs-toggle="tooltip"
-        data-bs-placement="top"
-        title="Twitter"
-        target="_blank"
-        rel="noopener"
-        aria-label="Twitter"
-      >
+
+      <a href="https://twitter.com/intent/tweet?text=Introduction%20-%20danielthetam.github.io&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fintroduction%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
+
       
-      <a
-        href="https://www.facebook.com/sharer/sharer.php?title=Introduction%20-%20danielthetam.github.io&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fintroduction%2F"
-        data-bs-toggle="tooltip"
-        data-bs-placement="top"
-        title="Facebook"
-        target="_blank"
-        rel="noopener"
-        aria-label="Facebook"
-      >
+
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Introduction%20-%20danielthetam.github.io&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fintroduction%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
+
       
-      <a
-        href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fintroduction%2F&text=Introduction%20-%20danielthetam.github.io"
-        data-bs-toggle="tooltip"
-        data-bs-placement="top"
-        title="Telegram"
-        target="_blank"
-        rel="noopener"
-        aria-label="Telegram"
-      >
+
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fintroduction%2F&text=Introduction%20-%20danielthetam.github.io" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
+      </a>
+    
+
+      
+
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fintroduction%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin" aria-label="Linkedin">
+        <i class="fa-fw fab fa-linkedin"></i>
       </a>
     
 
@@ -946,26 +884,23 @@ and hopefully serves as a light in the dark for beginners or any curious develop
       title="Copy link"
       data-title-succeed="Link copied successfully!"
     >
-      <i class="fa-fw fas fa-link pe-none"></i>
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
     </button>
   </span>
 </div>
 
+    </div>
+    <!-- .post-tail-bottom -->
   </div>
-  <!-- .post-tail-bottom -->
-</div>
-<!-- div.post-tail-wrapper -->
-
-
-  
-
-  
+  <!-- div.post-tail-wrapper -->
 </article>
 
+
+            
           </main>
 
           <!-- panel -->
-          <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
+          <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 mb-5 text-muted">
             <div class="access">
               <!-- Get the last 5 posts from lastmod list. -->
 
@@ -990,21 +925,21 @@ and hopefully serves as a light in the dark for beginners or any curious develop
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/introduction/">Introduction</a>
+          <a href="/posts/integrating-with-jbpm/">Integrating with jBPM</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/getting-started-with-jbpm/">Getting Started with jBPM</a>
+          <a href="/posts/preparation-for-integration/">Preparation for jBPM integration</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/creating-data-objects/">Creating Data Objects and Groups</a>
+          <a href="/posts/deploying-our-process/">Deploying our Business Process</a>
         </li>
       
         
@@ -1018,7 +953,7 @@ and hopefully serves as a light in the dark for beginners or any curious develop
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/integrating-with-jbpm/">Integrating with jBPM</a>
+          <a href="/posts/creating-data-objects/">Creating Data Objects and Groups</a>
         </li>
       
     </ul>
@@ -1053,7 +988,7 @@ and hopefully serves as a light in the dark for beginners or any curious develop
 
 
 
-  <section id="toc-wrapper" class="ps-0 pe-4 mb-5">
+  <section id="toc-wrapper" class="ps-0 pe-4">
     <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
     <nav id="toc"></nav>
   </section>
@@ -1068,8 +1003,7 @@ and hopefully serves as a light in the dark for beginners or any curious develop
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
               
-                
-                <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
 
 <!-- The total size of related posts -->
 
@@ -1107,79 +1041,91 @@ and hopefully serves as a light in the dark for beginners or any curious develop
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
 
@@ -1195,7 +1141,7 @@ and hopefully serves as a light in the dark for beginners or any curious develop
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/getting-started-with-jbpm/" class="post-preview card h-100">
+          <a href="/posts/errors-to-note/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1207,17 +1153,15 @@ and hopefully serves as a light in the dark for beginners or any curious develop
 
 <time
   
-    class="small"
-  
-  data-ts="1694847600"
+  data-ts="1694847180"
   data-df="ll"
   
 >
   Sep 16, 2023
 </time>
 
-              <h4 class="pt-0 my-2">Getting Started with jBPM</h4>
-              <div class="text-muted small">
+              <h4 class="pt-0 my-2">Errors to Note</h4>
+              <div class="text-muted">
                 <p>
                   
 
@@ -1225,8 +1169,7 @@ and hopefully serves as a light in the dark for beginners or any curious develop
 
 
 
-                  Starting the jBPM Server
-Once we have installed jBPM and unzipped its contents, we can begin by navigating to the ‘bin’ folder and running ‘standalone.bat’. This will get the jBPM server up and run...
+                  If SpringBoot produces an error that states that the port is in use, that means you have to navigate back to the application.properties file and change the server port to any open port on your devi...
                 </p>
               </div>
             </div>
@@ -1234,7 +1177,7 @@ Once we have installed jBPM and unzipped its contents, we can begin by navigatin
         </article>
       
         <article class="col">
-          <a href="/posts/creating-data-objects/" class="post-preview card h-100">
+          <a href="/posts/integrating-with-jbpm/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1246,17 +1189,15 @@ Once we have installed jBPM and unzipped its contents, we can begin by navigatin
 
 <time
   
-    class="small"
-  
-  data-ts="1694847600"
+  data-ts="1694847240"
   data-df="ll"
   
 >
   Sep 16, 2023
 </time>
 
-              <h4 class="pt-0 my-2">Creating Data Objects and Groups</h4>
-              <div class="text-muted small">
+              <h4 class="pt-0 my-2">Integrating with jBPM</h4>
+              <div class="text-muted">
                 <p>
                   
 
@@ -1264,8 +1205,8 @@ Once we have installed jBPM and unzipped its contents, we can begin by navigatin
 
 
 
-                  Creating Data Objects
-Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a sce...
+                  Setting up our Postgres database
+Open your Postgres setup, and just step through everything while following the default configurations, but ensure that you note down your password and your host, an...
                 </p>
               </div>
             </div>
@@ -1273,7 +1214,7 @@ Now, we will begin adding our assets. First, let’s clarify what objects we’d
         </article>
       
         <article class="col">
-          <a href="/posts/creating-our-process/" class="post-preview card h-100">
+          <a href="/posts/preparation-for-integration/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1285,17 +1226,15 @@ Now, we will begin adding our assets. First, let’s clarify what objects we’d
 
 <time
   
-    class="small"
-  
-  data-ts="1694849400"
+  data-ts="1694847300"
   data-df="ll"
   
 >
   Sep 16, 2023
 </time>
 
-              <h4 class="pt-0 my-2">Creating Our Business Process</h4>
-              <div class="text-muted small">
+              <h4 class="pt-0 my-2">Preparation for jBPM integration</h4>
+              <div class="text-muted">
                 <p>
                   
 
@@ -1303,9 +1242,8 @@ Now, we will begin adding our assets. First, let’s clarify what objects we’d
 
 
 
-                  
-  A high-level summary on how a process works
-  There are two terms that we’d ought to familiarise ourselves with here. One being process definition, and the other process instance. Currently, we ...
+                  How does integration work?
+As previously mentioned, jBPM allows for smooth integration with its accesible and well-secured REST API. It enables us to create our own powerful tools that act as an ex...
                 </p>
               </div>
             </div>
@@ -1317,37 +1255,40 @@ Now, we will begin adding our assets. First, let’s clarify what objects we’d
   <!-- #related-posts -->
 
 
+            
               
-                
-                <!-- Navigation buttons at the bottom of the post. -->
+              <!-- Navigation buttons at the bottom of the post. -->
 
 <nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
   
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Older">
-      <p>-</p>
-    </div>
-  
-
-  
     <a
       href="/posts/getting-started-with-jbpm/"
       class="btn btn-outline-primary"
-      aria-label="Newer"
+      aria-label="Older"
     >
       <p>Getting Started with jBPM</p>
     </a>
   
+
+  
+    <a
+      href="/posts/gc-x-trello-integration/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>Google Classroom x Trello Integration App</p>
+    </a>
+  
 </nav>
 
+            
               
-                
-                <!--  The comments switcher -->
+              <!--  The comments switcher -->
 
 
-              
             
 
             <!-- The Footer -->
@@ -1361,7 +1302,7 @@ Now, we will begin adding our assets. First, let’s clarify what objects we’d
 >
   <p>
     ©
-    <time>2023</time>
+    <time>2024</time>
     <a href="https://github.com/danielthetam">danielthetam</a>.
     
       <span
@@ -1372,7 +1313,7 @@ Now, we will begin adding our assets. First, let’s clarify what objects we’d
     
   </p>
 
-  <p>Using the <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> theme <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a>
+  <p>Using the <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> theme for <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>.
   </p>
 </footer>
 
@@ -1558,7 +1499,7 @@ Now, we will begin adding our assets. First, let’s clarify what objects we’d
 
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/lazysizes@5.3.2/lazysizes.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.9/dayjs.min.js,npm/dayjs@1.11.9/locale/en.min.js,npm/dayjs@1.11.9/plugin/relativeTime.min.js,npm/dayjs@1.11.9/plugin/localizedFormat.min.js,npm/tocbot@4.21.1/dist/tocbot.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/en.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js,npm/tocbot@4.21.3/dist/tocbot.min.js"></script>
 
 
 

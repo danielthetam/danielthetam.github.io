@@ -1,7 +1,7 @@
 ---
 title: Creating Our Business Process
 categories: [Projects,  jBPM-qBPM]
-date: 2023-09-16 15:30:00 +0800
+date: 2023-09-16 14:57:00 +0800
 ---
 > ## *A high-level summary on how a process works*
 > There are two terms that we'd ought to familiarise ourselves with here. One being **process definition**, and the other **process instance**. Currently, we are creating a process definition, which can be thought of as a base blueprint for a process instance. There can be multiple process instances, which are created(or more properly-termed 'instantiated') when the employee wants to submit a request. Each instance is different from the other and may end with varying results. This is primarily reliant on differences in process variables that are defined by user input(like our `employee` and `request` variable that needs to be filled up by the requester) as well as outputs from functions executed along the flow.

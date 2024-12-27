@@ -1,7 +1,7 @@
 ---
 title: Preparation for jBPM integration
 categories: [Projects,  jBPM-qBPM]
-date: 2023-09-16 15:30:00 +0800
+date: 2023-09-16 14:55:00 +0800
 ---
 
 ## How does integration work?

@@ -1,7 +1,7 @@
 ---
 title: Integrating with jBPM
 categories: [Projects,  jBPM-qBPM]
-date: 2023-09-16 15:30:00 +0800
+date: 2023-09-16 14:54:00 +0800
 ---
 
 ## Setting up our Postgres database

@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>danielthetam.github.io</title>
   <subtitle>This blog acts as a host for any documentation for my projects, however, if you are interested, my personal blog  can be found at danieltam.com</subtitle>
-  <updated>2023-11-21T11:51:50+08:00</updated>
+  <updated>2024-12-27T16:24:18+08:00</updated>
   <author>
     <name>danielthetam</name>
     <uri>http://localhost:4000/</uri>
@@ -13,21 +13,21 @@
   <link rel="alternate" type="text/html" hreflang="en"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
-  <rights> © 2023 danielthetam </rights>
+  <rights> © 2024 danielthetam </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
 
   
   <entry>
-    <title>Errors to Note</title>
-    <link href="http://localhost:4000/posts/errors-to-note/" rel="alternate" type="text/html" title="Errors to Note" />
-    <published>2023-09-16T15:30:00+08:00</published>
+    <title>Google Classroom x Trello Integration App</title>
+    <link href="http://localhost:4000/posts/gc-x-trello-integration/" rel="alternate" type="text/html" title="Google Classroom x Trello Integration App" />
+    <published>2024-12-26T15:00:00+08:00</published>
   
-    <updated>2023-09-16T15:30:00+08:00</updated>
+    <updated>2024-12-26T15:00:00+08:00</updated>
   
-    <id>http://localhost:4000/posts/errors-to-note/</id>
-    <content src="http://localhost:4000/posts/errors-to-note/" />
+    <id>http://localhost:4000/posts/gc-x-trello-integration/</id>
+    <content src="http://localhost:4000/posts/gc-x-trello-integration/" />
     <author>
       <name>danielthetam</name>
     </author>
@@ -35,8 +35,6 @@
   
     
     <category term="Projects" />
-    
-    <category term="jBPM-qBPM" />
     
   
 
@@ -48,10 +46,11 @@
 
 
 
-      If SpringBoot produces an error that states that the port is in use, that means you have to navigate back to the application.properties file and change the server port to any open port on your device.
+      This documentation here is a tutorial on how you can set up the GCxTrelloIntegration app for your own personal use. This script was initially made for myself when we used Google Classroom for school assignments back in 2020. Now I have updated it following the changes in Google and Trello’s protocol.
 
-In the case that any other errors come up, do attempt to search it up as setup will differ from environment to environment, or as a last resort, you may contact me from my website.
 
+  Feature requests can be sent to me through the “Contact” page on my website.
+Feel free to b...
     </summary>
   
 
@@ -59,14 +58,14 @@ In the case that any other errors come up, do attempt to search it up as setup w
 
   
   <entry>
-    <title>Integrating with jBPM</title>
-    <link href="http://localhost:4000/posts/integrating-with-jbpm/" rel="alternate" type="text/html" title="Integrating with jBPM" />
-    <published>2023-09-16T15:30:00+08:00</published>
+    <title>Introduction</title>
+    <link href="http://localhost:4000/posts/introduction/" rel="alternate" type="text/html" title="Introduction" />
+    <published>2023-09-16T15:00:00+08:00</published>
   
-    <updated>2023-09-22T15:24:27+08:00</updated>
+    <updated>2023-11-21T11:54:08+08:00</updated>
   
-    <id>http://localhost:4000/posts/integrating-with-jbpm/</id>
-    <content src="http://localhost:4000/posts/integrating-with-jbpm/" />
+    <id>http://localhost:4000/posts/introduction/</id>
+    <content src="http://localhost:4000/posts/introduction/" />
     <author>
       <name>danielthetam</name>
     </author>
@@ -87,10 +86,14 @@ In the case that any other errors come up, do attempt to search it up as setup w
 
 
 
-      Setting up our Postgres database
-Open your Postgres setup, and just step through everything while following the default configurations, but ensure that you note down your password and your host, and also make sure that Command Line Tools is ticked as an installation configuration.
+      
+  Disclaimer
+  I am by no means a professional on the topics mentioned nor the technologies; rather, this documentation is a blog on my experience as an amateur
+and hopefully serves as a light in the dark for beginners or any curious developers looking to perform a little project with business automation.
 
-After installation, search for psql in your search bar and open the application. Once you open it, you’ll see some...
+
+What is jBPM?
+jBPM is a business automation tool for automating business processes with...
     </summary>
   
 
@@ -98,14 +101,14 @@ After installation, search for psql in your search bar and open the application.
 
   
   <entry>
-    <title>Preparation for jBPM integration</title>
-    <link href="http://localhost:4000/posts/preparation-for-integration/" rel="alternate" type="text/html" title="Preparation for jBPM integration" />
-    <published>2023-09-16T15:30:00+08:00</published>
+    <title>Getting Started with jBPM</title>
+    <link href="http://localhost:4000/posts/getting-started-with-jbpm/" rel="alternate" type="text/html" title="Getting Started with jBPM" />
+    <published>2023-09-16T14:59:00+08:00</published>
   
-    <updated>2023-09-16T15:30:00+08:00</updated>
+    <updated>2023-11-21T11:54:08+08:00</updated>
   
-    <id>http://localhost:4000/posts/preparation-for-integration/</id>
-    <content src="http://localhost:4000/posts/preparation-for-integration/" />
+    <id>http://localhost:4000/posts/getting-started-with-jbpm/</id>
+    <content src="http://localhost:4000/posts/getting-started-with-jbpm/" />
     <author>
       <name>danielthetam</name>
     </author>
@@ -126,10 +129,10 @@ After installation, search for psql in your search bar and open the application.
 
 
 
-      How does integration work?
-As previously mentioned, jBPM allows for smooth integration with its accesible and well-secured REST API. It enables us to create our own powerful tools that act as an extension of jBPM, an example of such is the one I’ve created for demonstrative purposes, qBPM.
+      Starting the jBPM Server
+Once we have installed jBPM and unzipped its contents, we can begin by navigating to the ‘bin’ folder and running ‘standalone.bat’. This will get the jBPM server up and running. Once the server is up, navigate to Business Central(“https://localhost:8080/business-central/”) where we’ll be met by the Business Central login page.
 
-Before we begin, we need to understand the structure of qBPM. qBPM uses a React frontend and a SpringBoot...
+  It may take a while for the server to st...
     </summary>
   
 
@@ -137,14 +140,14 @@ Before we begin, we need to understand the structure of qBPM. qBPM uses a React 
 
   
   <entry>
-    <title>Deploying our Business Process</title>
-    <link href="http://localhost:4000/posts/deploying-our-process/" rel="alternate" type="text/html" title="Deploying our Business Process" />
-    <published>2023-09-16T15:30:00+08:00</published>
+    <title>Creating Data Objects and Groups</title>
+    <link href="http://localhost:4000/posts/creating-data-objects/" rel="alternate" type="text/html" title="Creating Data Objects and Groups" />
+    <published>2023-09-16T14:58:00+08:00</published>
   
-    <updated>2023-09-19T23:41:26+08:00</updated>
+    <updated>2023-11-21T11:54:08+08:00</updated>
   
-    <id>http://localhost:4000/posts/deploying-our-process/</id>
-    <content src="http://localhost:4000/posts/deploying-our-process/" />
+    <id>http://localhost:4000/posts/creating-data-objects/</id>
+    <content src="http://localhost:4000/posts/creating-data-objects/" />
     <author>
       <name>danielthetam</name>
     </author>
@@ -165,10 +168,10 @@ Before we begin, we need to understand the structure of qBPM. qBPM uses a React 
 
 
 
-      Deploying our project
-Before we deploy our project, we need to generate the forms required for our process. To do this, head into our request-portal process, click on the form button(form icon to the left of the Download button), and click Generate all forms. This will generate all dedicated forms for our business process. Once generated, we should see some new form assets in our project.
+      Creating Data Objects
+Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a scenario and analysing it.
 
-Now,...
+In our portal, we’ll have an actor who submits a request, groups of actors who process the request and a final actor who decides whether the request is approved or not. Ultima...
     </summary>
   
 
@@ -178,9 +181,9 @@ Now,...
   <entry>
     <title>Creating Our Business Process</title>
     <link href="http://localhost:4000/posts/creating-our-process/" rel="alternate" type="text/html" title="Creating Our Business Process" />
-    <published>2023-09-16T15:30:00+08:00</published>
+    <published>2023-09-16T14:57:00+08:00</published>
   
-    <updated>2023-09-22T15:53:23+08:00</updated>
+    <updated>2023-11-21T11:54:08+08:00</updated>
   
     <id>http://localhost:4000/posts/creating-our-process/</id>
     <content src="http://localhost:4000/posts/creating-our-process/" />

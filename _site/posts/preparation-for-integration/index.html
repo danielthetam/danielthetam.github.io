@@ -13,12 +13,8 @@
 
 
 
-
-
 <!-- `site.alt_lang` can specify a language different from the UI -->
-<html lang="en" 
-  
->
+<html lang="en" >
   <!-- The Head -->
 
 <head>
@@ -41,17 +37,17 @@
 <meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:title" content="Preparation for jBPM integration" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="How does integration work? As previously mentioned, jBPM allows for smooth integration with its accesible and well-secured REST API. It enables us to create our own powerful tools that act as an extension of jBPM, an example of such is the one I’ve created for demonstrative purposes, qBPM. Before we begin, we need to understand the structure of qBPM. qBPM uses a React frontend and a SpringBoot backend. Aside from serving as our React application’s API, SpringBoot serves as a proxy between jBPM and our client-side due to browser CORS policies preventing us from sending requests to jBPM(at least for me) through our React application. Besides, I find it more organised to have my client application only call from a single domain and have my backend do most of the dirty work. Configuring jBPM Before we begin downloading the codebase and setting things up, we need to configure our jBPM’s system settings. As previously mentioned, jBPM’s REST API requires authentication to access it. That’s why we use wbadmin as our system admin account and use its credentials for authentication. However, when we want to get tasks specific to a user, let’s name them User B, by default it only returns tasks that are available for the user that we use for authentication(i.e wbadmin’s tasks). In order to get the tasks for User B while using wbadmin’s credentials instead of User B’s credentials, we need to enable bypass authentication in jBPM’s configuration. We can’t use User B’s credentials because qBPM ensures that passwords are hashed Let’s get straight to that. Navigate to jBPM’s root folder, enter the standalone folder, enter configuration, and edit standalone.xml. Under the &lt;system-properties&gt; tag, add the line: &lt;property name=&quot;org.kie.server.bypass.auth.user&quot; value=&quot;true&quot;/&gt;. Save it, and restart jBPM." />
-<meta property="og:description" content="How does integration work? As previously mentioned, jBPM allows for smooth integration with its accesible and well-secured REST API. It enables us to create our own powerful tools that act as an extension of jBPM, an example of such is the one I’ve created for demonstrative purposes, qBPM. Before we begin, we need to understand the structure of qBPM. qBPM uses a React frontend and a SpringBoot backend. Aside from serving as our React application’s API, SpringBoot serves as a proxy between jBPM and our client-side due to browser CORS policies preventing us from sending requests to jBPM(at least for me) through our React application. Besides, I find it more organised to have my client application only call from a single domain and have my backend do most of the dirty work. Configuring jBPM Before we begin downloading the codebase and setting things up, we need to configure our jBPM’s system settings. As previously mentioned, jBPM’s REST API requires authentication to access it. That’s why we use wbadmin as our system admin account and use its credentials for authentication. However, when we want to get tasks specific to a user, let’s name them User B, by default it only returns tasks that are available for the user that we use for authentication(i.e wbadmin’s tasks). In order to get the tasks for User B while using wbadmin’s credentials instead of User B’s credentials, we need to enable bypass authentication in jBPM’s configuration. We can’t use User B’s credentials because qBPM ensures that passwords are hashed Let’s get straight to that. Navigate to jBPM’s root folder, enter the standalone folder, enter configuration, and edit standalone.xml. Under the &lt;system-properties&gt; tag, add the line: &lt;property name=&quot;org.kie.server.bypass.auth.user&quot; value=&quot;true&quot;/&gt;. Save it, and restart jBPM." />
+<meta name="description" content="How does integration work? As previously mentioned, jBPM allows for smooth integration with its accesible and well-secured REST API. It enables us to create our own powerful tools that act as an extension of jBPM, an example of such is the one I’ve created for demonstrative purposes, qBPM." />
+<meta property="og:description" content="How does integration work? As previously mentioned, jBPM allows for smooth integration with its accesible and well-secured REST API. It enables us to create our own powerful tools that act as an extension of jBPM, an example of such is the one I’ve created for demonstrative purposes, qBPM." />
 <link rel="canonical" href="http://localhost:4000/posts/preparation-for-integration/" />
 <meta property="og:url" content="http://localhost:4000/posts/preparation-for-integration/" />
 <meta property="og:site_name" content="danielthetam.github.io" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2023-09-16T15:30:00+08:00" />
+<meta property="article:published_time" content="2023-09-16T14:55:00+08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Preparation for jBPM integration" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-16T15:30:00+08:00","datePublished":"2023-09-16T15:30:00+08:00","description":"How does integration work? As previously mentioned, jBPM allows for smooth integration with its accesible and well-secured REST API. It enables us to create our own powerful tools that act as an extension of jBPM, an example of such is the one I’ve created for demonstrative purposes, qBPM. Before we begin, we need to understand the structure of qBPM. qBPM uses a React frontend and a SpringBoot backend. Aside from serving as our React application’s API, SpringBoot serves as a proxy between jBPM and our client-side due to browser CORS policies preventing us from sending requests to jBPM(at least for me) through our React application. Besides, I find it more organised to have my client application only call from a single domain and have my backend do most of the dirty work. Configuring jBPM Before we begin downloading the codebase and setting things up, we need to configure our jBPM’s system settings. As previously mentioned, jBPM’s REST API requires authentication to access it. That’s why we use wbadmin as our system admin account and use its credentials for authentication. However, when we want to get tasks specific to a user, let’s name them User B, by default it only returns tasks that are available for the user that we use for authentication(i.e wbadmin’s tasks). In order to get the tasks for User B while using wbadmin’s credentials instead of User B’s credentials, we need to enable bypass authentication in jBPM’s configuration. We can’t use User B’s credentials because qBPM ensures that passwords are hashed Let’s get straight to that. Navigate to jBPM’s root folder, enter the standalone folder, enter configuration, and edit standalone.xml. Under the &lt;system-properties&gt; tag, add the line: &lt;property name=&quot;org.kie.server.bypass.auth.user&quot; value=&quot;true&quot;/&gt;. Save it, and restart jBPM.","headline":"Preparation for jBPM integration","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/preparation-for-integration/"},"url":"http://localhost:4000/posts/preparation-for-integration/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-21T11:54:08+08:00","datePublished":"2023-09-16T14:55:00+08:00","description":"How does integration work? As previously mentioned, jBPM allows for smooth integration with its accesible and well-secured REST API. It enables us to create our own powerful tools that act as an extension of jBPM, an example of such is the one I’ve created for demonstrative purposes, qBPM.","headline":"Preparation for jBPM integration","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/preparation-for-integration/"},"url":"http://localhost:4000/posts/preparation-for-integration/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -100,7 +96,7 @@
   
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
@@ -108,7 +104,11 @@
   <link rel="stylesheet" href="/assets/css/jekyll-theme-chirpy.css">
 
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.1/dist/tocbot.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.3/dist/tocbot.min.css">
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.min.css">
   
 
   
@@ -382,8 +382,8 @@
 
       
         <a
-          href="https://twitter.com/"
-          aria-label="twitter"
+          href="https://linkedin.com/in/danielthetam/"
+          aria-label="linkedin"
           
 
           
@@ -397,43 +397,7 @@
             rel="noopener noreferrer"
           
         >
-          <i class="fa-brands fa-x-twitter"></i>
-        </a>
-      
-    
-      
-
-      
-        <a
-          href="javascript:location.href = 'mailto:' + ['example','domain.com'].join('@')"
-          aria-label="email"
-          
-
-          
-
-          
-
-          
-        >
-          <i class="fas fa-envelope"></i>
-        </a>
-      
-    
-      
-
-      
-        <a
-          href="/feed.xml"
-          aria-label="rss"
-          
-
-          
-
-          
-
-          
-        >
-          <i class="fas fa-rss"></i>
+          <i class="fab fa-linkedin"></i>
         </a>
       
     
@@ -444,7 +408,7 @@
 
 
     <div id="main-wrapper" class="d-flex justify-content-center">
-      <div class="container px-xxl-5">
+      <div class="container d-flex flex-column px-xxl-5">
         <!-- The Top Bar -->
 
 <header id="topbar-wrapper" aria-label="Top Bar">
@@ -507,18 +471,10 @@
 </header>
 
 
-        <div class="row">
-          <main
-            aria-label="Main Content"
-            class="col-12 col-lg-11 col-xl-9 px-md-4"
-          >
+        <div class="row flex-grow-1">
+          <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
-
-<article class="px-1">
-  
-    
-  
-    <!-- Refactor the HTML structure -->
+              <!-- Refactor the HTML structure -->
 
 
 
@@ -540,7 +496,9 @@
 <!-- Change the icon of checkbox -->
 
 
-<!-- images -->
+
+<!-- Handle images -->
+
 
 
 
@@ -576,7 +534,6 @@
       
 
       
-
     
       
 
@@ -588,11 +545,9 @@
       
 
       
-
     
 
     
-
   
 
   
@@ -618,14 +573,15 @@
 
 
 
-<header>
-  <h1 data-toc-skip>Preparation for jBPM integration</h1>
+<article class="px-1">
+  <header>
+    <h1 data-toc-skip>Preparation for jBPM integration</h1>
 
-  <div class="post-meta text-muted">
-    <!-- published date -->
-    <span>
-      Posted
-      <!--
+    <div class="post-meta text-muted">
+      <!-- published date -->
+      <span>
+        Posted
+        <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -635,7 +591,7 @@
 
 <time
   
-  data-ts="1694849400"
+  data-ts="1694847300"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -644,29 +600,52 @@
   Sep 16, 2023
 </time>
 
-    </span>
-
-    <!-- lastmod date -->
-    
-
-    
-
-    <div class="d-flex justify-content-between">
-      <!-- author(s) -->
-      <span>
-        
-
-        By
-
-        <em>
-          
-            <a href="https://github.com/danielthetam">danielthetam</a>
-          
-        </em>
       </span>
 
-      <!-- read time -->
-      <!-- Calculate the post's reading time, and display the word count in tooltip -->
+      <!-- lastmod date -->
+      
+        <span>
+          Updated
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1700538848"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Nov 21, 2023
+</time>
+
+        </span>
+      
+
+      
+
+      <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          
+
+          By
+
+          <em>
+            
+              <a href="https://github.com/danielthetam">danielthetam</a>
+            
+          </em>
+        </span>
+
+        <!-- read time -->
+        <!-- Calculate the post's reading time, and display the word count in tooltip -->
 
 
 
@@ -690,14 +669,14 @@
 >
   <em>1 min</em> read</span>
 
+      </div>
+      <!-- .d-flex -->
     </div>
-    <!-- .d-flex -->
-  </div>
-  <!-- .post-meta -->
-</header>
+    <!-- .post-meta -->
+  </header>
 
-<div class="content">
-  <h2 id="how-does-integration-work"><span class="me-2">How does integration work?</span><a href="#how-does-integration-work" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+  <div class="content">
+    <h2 id="how-does-integration-work"><span class="me-2">How does integration work?</span><a href="#how-does-integration-work" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>As previously mentioned, jBPM allows for smooth integration with its accesible and well-secured REST API. It enables us to create our own powerful tools that act as an extension of jBPM, an example of such is the one I’ve created for demonstrative purposes, qBPM.</p>
 
 <p>Before we begin, we need to understand the structure of qBPM. qBPM uses a React frontend and a SpringBoot backend. Aside from serving as our React application’s API, SpringBoot serves as a proxy between jBPM and our client-side due to browser CORS policies preventing us from sending requests to jBPM(at least for me) through our React application. Besides, I find it more organised to have my client application only call from a single domain and have my backend do most of the dirty work.</p>
@@ -713,87 +692,76 @@
 
 <p>Let’s get straight to that. Navigate to jBPM’s root folder, enter the <code class="language-plaintext highlighter-rouge">standalone</code> folder, enter <code class="language-plaintext highlighter-rouge">configuration</code>, and edit <code class="language-plaintext highlighter-rouge">standalone.xml</code>. Under the <code class="language-plaintext highlighter-rouge">&lt;system-properties&gt;</code> tag, add the line: <code class="language-plaintext highlighter-rouge">&lt;property name="org.kie.server.bypass.auth.user" value="true"/&gt;</code>. Save it, and restart jBPM.</p>
 
-</div>
+  </div>
 
-<div class="post-tail-wrapper text-muted">
-  <!-- categories -->
-  
-    <div class="post-meta mb-3">
-      <i class="far fa-folder-open fa-fw me-1"></i>
-      
-        <a href="/categories/projects/">Projects</a>,
-        <a href="/categories/jbpm-qbpm/">jBPM-qBPM</a>
-    </div>
-  
-
-  <!-- tags -->
-  
-
-  <div
-    class="
-      post-tail-bottom
-      d-flex justify-content-between align-items-center mt-5 pb-2
-    "
-  >
-    <div class="license-wrapper">
-      
+  <div class="post-tail-wrapper text-muted">
+    <!-- categories -->
+    
+      <div class="post-meta mb-3">
+        <i class="far fa-folder-open fa-fw me-1"></i>
         
+          <a href="/categories/projects/">Projects</a>,
+          <a href="/categories/jbpm-qbpm/">jBPM-qBPM</a>
+      </div>
+    
 
-        This post is licensed under 
+    <!-- tags -->
+    
+
+    <div
+      class="
+        post-tail-bottom
+        d-flex justify-content-between align-items-center mt-5 pb-2
+      "
+    >
+      <div class="license-wrapper">
+        
+          
+
+          This post is licensed under 
         <a href="https://creativecommons.org/licenses/by/4.0/">
           CC BY 4.0
         </a>
          by the author.
-      
-    </div>
+        
+      </div>
 
-    <!-- Post sharing snippet -->
+      <!-- Post sharing snippet -->
 
 <div class="share-wrapper d-flex align-items-center">
-  <span class="share-label text-muted me-1">Share</span>
+  <span class="share-label text-muted">Share</span>
   <span class="share-icons">
     
     
     
 
     
+
       
-      <a
-        href="https://twitter.com/intent/tweet?text=Preparation%20for%20jBPM%20integration%20-%20danielthetam.github.io&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpreparation-for-integration%2F"
-        data-bs-toggle="tooltip"
-        data-bs-placement="top"
-        title="Twitter"
-        target="_blank"
-        rel="noopener"
-        aria-label="Twitter"
-      >
+
+      <a href="https://twitter.com/intent/tweet?text=Preparation%20for%20jBPM%20integration%20-%20danielthetam.github.io&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpreparation-for-integration%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" aria-label="Twitter">
         <i class="fa-fw fa-brands fa-square-x-twitter"></i>
       </a>
     
+
       
-      <a
-        href="https://www.facebook.com/sharer/sharer.php?title=Preparation%20for%20jBPM%20integration%20-%20danielthetam.github.io&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpreparation-for-integration%2F"
-        data-bs-toggle="tooltip"
-        data-bs-placement="top"
-        title="Facebook"
-        target="_blank"
-        rel="noopener"
-        aria-label="Facebook"
-      >
+
+      <a href="https://www.facebook.com/sharer/sharer.php?title=Preparation%20for%20jBPM%20integration%20-%20danielthetam.github.io&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpreparation-for-integration%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" aria-label="Facebook">
         <i class="fa-fw fab fa-facebook-square"></i>
       </a>
     
+
       
-      <a
-        href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpreparation-for-integration%2F&text=Preparation%20for%20jBPM%20integration%20-%20danielthetam.github.io"
-        data-bs-toggle="tooltip"
-        data-bs-placement="top"
-        title="Telegram"
-        target="_blank"
-        rel="noopener"
-        aria-label="Telegram"
-      >
+
+      <a href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpreparation-for-integration%2F&text=Preparation%20for%20jBPM%20integration%20-%20danielthetam.github.io" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Telegram" aria-label="Telegram">
         <i class="fa-fw fab fa-telegram"></i>
+      </a>
+    
+
+      
+
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpreparation-for-integration%2F" target="_blank" rel="noopener" data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin" aria-label="Linkedin">
+        <i class="fa-fw fab fa-linkedin"></i>
       </a>
     
 
@@ -806,26 +774,23 @@
       title="Copy link"
       data-title-succeed="Link copied successfully!"
     >
-      <i class="fa-fw fas fa-link pe-none"></i>
+      <i class="fa-fw fas fa-link pe-none fs-6"></i>
     </button>
   </span>
 </div>
 
+    </div>
+    <!-- .post-tail-bottom -->
   </div>
-  <!-- .post-tail-bottom -->
-</div>
-<!-- div.post-tail-wrapper -->
-
-
-  
-
-  
+  <!-- div.post-tail-wrapper -->
 </article>
 
+
+            
           </main>
 
           <!-- panel -->
-          <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
+          <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 mb-5 text-muted">
             <div class="access">
               <!-- Get the last 5 posts from lastmod list. -->
 
@@ -850,21 +815,21 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/introduction/">Introduction</a>
+          <a href="/posts/integrating-with-jbpm/">Integrating with jBPM</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/getting-started-with-jbpm/">Getting Started with jBPM</a>
+          <a href="/posts/preparation-for-integration/">Preparation for jBPM integration</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/creating-data-objects/">Creating Data Objects and Groups</a>
+          <a href="/posts/deploying-our-process/">Deploying our Business Process</a>
         </li>
       
         
@@ -878,7 +843,7 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/posts/integrating-with-jbpm/">Integrating with jBPM</a>
+          <a href="/posts/creating-data-objects/">Creating Data Objects and Groups</a>
         </li>
       
     </ul>
@@ -913,7 +878,7 @@
 
 
 
-  <section id="toc-wrapper" class="ps-0 pe-4 mb-5">
+  <section id="toc-wrapper" class="ps-0 pe-4">
     <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
     <nav id="toc"></nav>
   </section>
@@ -928,8 +893,7 @@
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
             
               
-                
-                <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+              <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
 
 <!-- The total size of related posts -->
 
@@ -979,43 +943,55 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
   
 
   
@@ -1055,7 +1031,7 @@
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
       
         <article class="col">
-          <a href="/posts/introduction/" class="post-preview card h-100">
+          <a href="/posts/errors-to-note/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1067,17 +1043,15 @@
 
 <time
   
-    class="small"
-  
-  data-ts="1694847600"
+  data-ts="1694847180"
   data-df="ll"
   
 >
   Sep 16, 2023
 </time>
 
-              <h4 class="pt-0 my-2">Introduction</h4>
-              <div class="text-muted small">
+              <h4 class="pt-0 my-2">Errors to Note</h4>
+              <div class="text-muted">
                 <p>
                   
 
@@ -1085,10 +1059,7 @@
 
 
 
-                  
-  Disclaimer
-  I am by no means a professional on the topics mentioned nor the technologies; rather, this documentation is a blog on my experience as an amateur
-and hopefully serves as a light in ...
+                  If SpringBoot produces an error that states that the port is in use, that means you have to navigate back to the application.properties file and change the server port to any open port on your devi...
                 </p>
               </div>
             </div>
@@ -1096,7 +1067,7 @@ and hopefully serves as a light in ...
         </article>
       
         <article class="col">
-          <a href="/posts/getting-started-with-jbpm/" class="post-preview card h-100">
+          <a href="/posts/integrating-with-jbpm/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1108,17 +1079,15 @@ and hopefully serves as a light in ...
 
 <time
   
-    class="small"
-  
-  data-ts="1694847600"
+  data-ts="1694847240"
   data-df="ll"
   
 >
   Sep 16, 2023
 </time>
 
-              <h4 class="pt-0 my-2">Getting Started with jBPM</h4>
-              <div class="text-muted small">
+              <h4 class="pt-0 my-2">Integrating with jBPM</h4>
+              <div class="text-muted">
                 <p>
                   
 
@@ -1126,8 +1095,8 @@ and hopefully serves as a light in ...
 
 
 
-                  Starting the jBPM Server
-Once we have installed jBPM and unzipped its contents, we can begin by navigating to the ‘bin’ folder and running ‘standalone.bat’. This will get the jBPM server up and run...
+                  Setting up our Postgres database
+Open your Postgres setup, and just step through everything while following the default configurations, but ensure that you note down your password and your host, an...
                 </p>
               </div>
             </div>
@@ -1135,7 +1104,7 @@ Once we have installed jBPM and unzipped its contents, we can begin by navigatin
         </article>
       
         <article class="col">
-          <a href="/posts/creating-data-objects/" class="post-preview card h-100">
+          <a href="/posts/deploying-our-process/" class="post-preview card h-100">
             <div class="card-body">
               <!--
   Date format snippet
@@ -1147,17 +1116,15 @@ Once we have installed jBPM and unzipped its contents, we can begin by navigatin
 
 <time
   
-    class="small"
-  
-  data-ts="1694847600"
+  data-ts="1694847360"
   data-df="ll"
   
 >
   Sep 16, 2023
 </time>
 
-              <h4 class="pt-0 my-2">Creating Data Objects and Groups</h4>
-              <div class="text-muted small">
+              <h4 class="pt-0 my-2">Deploying our Business Process</h4>
+              <div class="text-muted">
                 <p>
                   
 
@@ -1165,8 +1132,8 @@ Once we have installed jBPM and unzipped its contents, we can begin by navigatin
 
 
 
-                  Creating Data Objects
-Now, we will begin adding our assets. First, let’s clarify what objects we’d need for our request portal. The best way to do this is to visualise our process by creating a sce...
+                  Deploying our project
+Before we deploy our project, we need to generate the forms required for our process. To do this, head into our request-portal process, click on the form button(form icon to t...
                 </p>
               </div>
             </div>
@@ -1178,9 +1145,9 @@ Now, we will begin adding our assets. First, let’s clarify what objects we’d
   <!-- #related-posts -->
 
 
+            
               
-                
-                <!-- Navigation buttons at the bottom of the post. -->
+              <!-- Navigation buttons at the bottom of the post. -->
 
 <nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
   
@@ -1188,31 +1155,30 @@ Now, we will begin adding our assets. First, let’s clarify what objects we’d
 
   
     <a
-      href="/posts/deploying-our-process/"
+      href="/posts/integrating-with-jbpm/"
       class="btn btn-outline-primary"
       aria-label="Older"
     >
-      <p>Deploying our Business Process</p>
+      <p>Integrating with jBPM</p>
     </a>
   
 
   
     <a
-      href="/posts/integrating-with-jbpm/"
+      href="/posts/deploying-our-process/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>Integrating with jBPM</p>
+      <p>Deploying our Business Process</p>
     </a>
   
 </nav>
 
+            
               
-                
-                <!--  The comments switcher -->
+              <!--  The comments switcher -->
 
 
-              
             
 
             <!-- The Footer -->
@@ -1226,7 +1192,7 @@ Now, we will begin adding our assets. First, let’s clarify what objects we’d
 >
   <p>
     ©
-    <time>2023</time>
+    <time>2024</time>
     <a href="https://github.com/danielthetam">danielthetam</a>.
     
       <span
@@ -1237,7 +1203,7 @@ Now, we will begin adding our assets. First, let’s clarify what objects we’d
     
   </p>
 
-  <p>Using the <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> theme <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a>
+  <p>Using the <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> theme for <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>.
   </p>
 </footer>
 
@@ -1423,7 +1389,7 @@ Now, we will begin adding our assets. First, let’s clarify what objects we’d
 
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/lazysizes@5.3.2/lazysizes.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.9/dayjs.min.js,npm/dayjs@1.11.9/locale/en.min.js,npm/dayjs@1.11.9/plugin/relativeTime.min.js,npm/dayjs@1.11.9/plugin/localizedFormat.min.js,npm/tocbot@4.21.1/dist/tocbot.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/loading-attribute-polyfill@2.1.1/dist/loading-attribute-polyfill.umd.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.10/dayjs.min.js,npm/dayjs@1.11.10/locale/en.min.js,npm/dayjs@1.11.10/plugin/relativeTime.min.js,npm/dayjs@1.11.10/plugin/localizedFormat.min.js,npm/tocbot@4.21.3/dist/tocbot.min.js"></script>
 
 
 
