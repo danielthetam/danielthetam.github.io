@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>danielthetam.github.io</title>
   <subtitle>This blog acts as a host for any documentation for my projects, however, if you are interested, my personal blog  can be found at danieltam.com</subtitle>
-  <updated>2024-12-27T16:24:18+08:00</updated>
+  <updated>2024-12-27T16:42:36+08:00</updated>
   <author>
     <name>danielthetam</name>
     <uri>http://localhost:4000/</uri>
@@ -105,7 +105,7 @@ jBPM is a business automation tool for automating business processes with...
     <link href="http://localhost:4000/posts/getting-started-with-jbpm/" rel="alternate" type="text/html" title="Getting Started with jBPM" />
     <published>2023-09-16T14:59:00+08:00</published>
   
-    <updated>2023-11-21T11:54:08+08:00</updated>
+    <updated>2024-12-27T16:32:45+08:00</updated>
   
     <id>http://localhost:4000/posts/getting-started-with-jbpm/</id>
     <content src="http://localhost:4000/posts/getting-started-with-jbpm/" />
@@ -144,7 +144,7 @@ Once we have installed jBPM and unzipped its contents, we can begin by navigatin
     <link href="http://localhost:4000/posts/creating-data-objects/" rel="alternate" type="text/html" title="Creating Data Objects and Groups" />
     <published>2023-09-16T14:58:00+08:00</published>
   
-    <updated>2023-11-21T11:54:08+08:00</updated>
+    <updated>2024-12-27T16:32:45+08:00</updated>
   
     <id>http://localhost:4000/posts/creating-data-objects/</id>
     <content src="http://localhost:4000/posts/creating-data-objects/" />
@@ -183,7 +183,7 @@ In our portal, we’ll have an actor who submits a request, groups of actors who
     <link href="http://localhost:4000/posts/creating-our-process/" rel="alternate" type="text/html" title="Creating Our Business Process" />
     <published>2023-09-16T14:57:00+08:00</published>
   
-    <updated>2023-11-21T11:54:08+08:00</updated>
+    <updated>2024-12-27T16:32:45+08:00</updated>
   
     <id>http://localhost:4000/posts/creating-our-process/</id>
     <content src="http://localhost:4000/posts/creating-our-process/" />

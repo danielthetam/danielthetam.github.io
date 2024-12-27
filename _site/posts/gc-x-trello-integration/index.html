@@ -610,7 +610,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="418 words"
+  title="448 words"
 >
   <em>2 min</em> read</span>
 
@@ -631,8 +631,10 @@ Google Classroom will be abbreviated as “GC” from now on.</p>
 
 <h1 id="prequisites">Prequisites</h1>
 <blockquote>
-  <p>Python 3.10.7 or greater
-pip package management tool</p>
+  <ul>
+    <li>Python 3.10.7 or greater</li>
+    <li>pip package management tool</li>
+  </ul>
 
 </blockquote>
 
@@ -650,14 +652,18 @@ Next, move the ‘credentials.json’ file to the project directory.</p>
 <h1 id="integrating-trello">Integrating trello</h1>
 <p>In our script, we used py-trello, a wrapper for Trello’s REST service. Just like our GC API, we now need to register our app to use the API. First, navigate to Trello’s <a href="https://trello.com/power-ups/admin">Power-Ups &amp; Integrations page</a>. Create a new integration and fill in the details. You can leave the iframe connector field empty.</p>
 
-<p>After creating it, you should be prompted with the option to generate a new API key. You will then be shown your API key and secret after generation. Next, go to the project directory and edit the “.env” file. Replace the strings with your corresponding API key and secret. Then, navigate to the “API key” tab, and to the right there should be a wall of text. Click on the link to generate a “Token”. Click “Allow”, and you will be given a token.</p>
+<p>After creating it, you should be prompted with the option to generate a new API key. You will then be shown your API key and secret after generation. Next, go to the project directory and edit the “.env” file. Replace the strings with your corresponding API key and secret. Go back to Trello, navigate to the “API key” tab. To the right, there should be a wall of text. Click on the link to generate a token. Click “Allow”, and you will be given a token.</p>
 
 <blockquote>
   <p>Your tokens and API keys should all be kept private. Do not share them with others.
 Then, replace the string in the “.env” file with your token.</p>
 </blockquote>
 
-<p>Next, run “quickstart.py”. You should then be redirected to for manual authorisation of the app. Ensure you authorise using the Google account that is a member of the class you are trying to pull your assignments from.</p>
+<p>Next, run “quickstart.py”. You should then be redirected to a page for manual authorisation of the app. Ensure you authorise using the Google account that is a member of the class you are trying to pull your assignments from.</p>
+
+<blockquote>
+  <p>If you have any permission error, head over to your Google Cloud project, and edit the permission scopes to allow the app to access all coursework.</p>
+</blockquote>
 
 
   </div>
@@ -782,6 +788,13 @@ Then, replace the string in the “.env” file with your token.</p>
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/errors-to-note/">Errors to Note</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/integrating-with-jbpm/">Integrating with jBPM</a>
         </li>
       
@@ -804,13 +817,6 @@ Then, replace the string in the “.env” file with your token.</p>
         
         <li class="text-truncate lh-lg">
           <a href="/posts/creating-our-process/">Creating Our Business Process</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/creating-data-objects/">Creating Data Objects and Groups</a>
         </li>
       
     </ul>
